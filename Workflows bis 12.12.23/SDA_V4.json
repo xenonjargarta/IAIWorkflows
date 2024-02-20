@@ -1,0 +1,2373 @@
+{
+  "last_node_id": 122,
+  "last_link_id": 661,
+  "nodes": [
+    {
+      "id": 53,
+      "type": "ttN concat",
+      "pos": [
+        1440,
+        140
+      ],
+      "size": {
+        "0": 220,
+        "1": 150
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 72,
+          "widget": {
+            "name": "text2"
+          },
+          "label": "Seed Number"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "concat",
+          "type": "STRING",
+          "links": [
+            73,
+            74
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "File Name",
+      "properties": {
+        "Node name for S&R": "ttN concat",
+        "ttNnodeVersion": "1.0.0"
+      },
+      "widgets_values": [
+        "COMFYUI_",
+        "",
+        "",
+        ","
+      ],
+      "color": "#31224f",
+      "bgcolor": "#453663"
+    },
+    {
+      "id": 37,
+      "type": "Save Text File",
+      "pos": [
+        1740,
+        340
+      ],
+      "size": {
+        "0": 280,
+        "1": 126
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 68,
+          "widget": {
+            "name": "text"
+          }
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 73,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Save Text File"
+      },
+      "widgets_values": [
+        "",
+        "./ComfyUI/output/[time(%Y-%m-%d)]",
+        "ComfyUI",
+        "_",
+        4
+      ],
+      "color": "#4f2248",
+      "bgcolor": "#63365c"
+    },
+    {
+      "id": 33,
+      "type": "CR Image Input Switch",
+      "pos": [
+        1440,
+        0
+      ],
+      "size": {
+        "0": 210,
+        "1": 78
+      },
+      "flags": {},
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image1",
+          "type": "IMAGE",
+          "link": 56
+        },
+        {
+          "name": "image2",
+          "type": "IMAGE",
+          "link": 57
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            96
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Image Input Switch"
+      },
+      "widgets_values": [
+        2
+      ],
+      "color": "#22384f",
+      "bgcolor": "#364c63"
+    },
+    {
+      "id": 29,
+      "type": "CR Overlay Text",
+      "pos": [
+        1060,
+        -480
+      ],
+      "size": {
+        "0": 306.10357666015625,
+        "1": 364
+      },
+      "flags": {},
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 45
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            56
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Overlay Text"
+      },
+      "widgets_values": [
+        "lms:-1.2,lcs:1,S:4,cfg:1.5,SN:lcm,SC:sgm_uniform",
+        "comic.ttf",
+        41,
+        "red",
+        "bottom",
+        "center",
+        10,
+        0,
+        0,
+        0,
+        0,
+        "image center",
+        "#000000"
+      ],
+      "color": "#4f2b22",
+      "bgcolor": "#633f36"
+    },
+    {
+      "id": 96,
+      "type": "ttN text3BOX_3WAYconcat",
+      "pos": [
+        -1880,
+        20
+      ],
+      "size": {
+        "0": 245.1999969482422,
+        "1": 180
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 139,
+          "widget": {
+            "name": "text1"
+          },
+          "label": "Dynamic Input"
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 658,
+          "widget": {
+            "name": "text2"
+          },
+          "label": "Static Input"
+        },
+        {
+          "name": "text3",
+          "type": "STRING",
+          "link": 659,
+          "widget": {
+            "name": "text3"
+          },
+          "label": "Additional Style Input"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "text3",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "1 & 2",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "1 & 3",
+          "type": "STRING",
+          "links": [
+            141
+          ],
+          "shape": 3,
+          "slot_index": 4
+        },
+        {
+          "name": "2 & 3",
+          "type": "STRING",
+          "links": [
+            142
+          ],
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "concat",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN text3BOX_3WAYconcat",
+        "ttNnodeVersion": "1.0.0"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((background in style of watercolor)),  (white skin type) , (age  22),  (blue hair), ",
+        ","
+      ],
+      "color": "#222f4f",
+      "bgcolor": "#364363"
+    },
+    {
+      "id": 41,
+      "type": "ttN concat",
+      "pos": [
+        1440,
+        340
+      ],
+      "size": {
+        "0": 220,
+        "1": 100
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 14,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 261,
+          "widget": {
+            "name": "text1"
+          },
+          "label": "Seed Number as Text"
+        },
+        {
+          "name": "text3",
+          "type": "STRING",
+          "link": 259,
+          "widget": {
+            "name": "text3"
+          },
+          "label": "Workflow Name"
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 260,
+          "widget": {
+            "name": "text2"
+          },
+          "label": "Positive Prompt"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "concat",
+          "type": "STRING",
+          "links": [
+            68
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "JSON Content",
+      "properties": {
+        "Node name for S&R": "ttN concat",
+        "ttNnodeVersion": "1.0.0"
+      },
+      "widgets_values": [
+        "SDA_V4.json\n",
+        "",
+        "SDA_4V4.json",
+        "|||||||||"
+      ],
+      "color": "#4d224f",
+      "bgcolor": "#613663"
+    },
+    {
+      "id": 52,
+      "type": "Seed With Text",
+      "pos": [
+        1020,
+        120
+      ],
+      "size": {
+        "0": 250.8501739501953,
+        "1": 170
+      },
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "Seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "Seed as Text",
+          "type": "STRING",
+          "links": [
+            72,
+            261
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "File prefix",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Seed With Text"
+      },
+      "widgets_values": [
+        988911643564661,
+        "fixed",
+        "out",
+        "_"
+      ],
+      "color": "#28224f",
+      "bgcolor": "#3c3663"
+    },
+    {
+      "id": 40,
+      "type": "PrimitiveNode",
+      "pos": [
+        1020,
+        360
+      ],
+      "size": {
+        "0": 220,
+        "1": 80
+      },
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            259
+          ],
+          "slot_index": 0,
+          "label": "Workflow Name",
+          "widget": {
+            "name": "text3"
+          }
+        }
+      ],
+      "title": "Workflow Name",
+      "properties": {},
+      "widgets_values": [
+        "SDA_4V4.json"
+      ],
+      "color": "#4f223f",
+      "bgcolor": "#633653"
+    },
+    {
+      "id": 100,
+      "type": "Reroute",
+      "pos": [
+        1100,
+        460
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 12,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 152
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            260
+          ],
+          "slot_index": 0
+        }
+      ],
+      "title": "Positive Prompt",
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      },
+      "color": "#4f222b",
+      "bgcolor": "#63363f"
+    },
+    {
+      "id": 3,
+      "type": "PatchModelAddDownscale",
+      "pos": [
+        -840,
+        -340
+      ],
+      "size": {
+        "0": 352.79998779296875,
+        "1": 202
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            4
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PatchModelAddDownscale"
+      },
+      "widgets_values": [
+        3,
+        2,
+        0,
+        0.35,
+        true,
+        "bicubic",
+        "bicubic"
+      ],
+      "color": "#454f22",
+      "bgcolor": "#596336"
+    },
+    {
+      "id": 4,
+      "type": "ModelSamplingDiscrete",
+      "pos": [
+        -680,
+        -220
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 13,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 4
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            5
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingDiscrete"
+      },
+      "widgets_values": [
+        "lcm",
+        false
+      ],
+      "color": "#224f2e",
+      "bgcolor": "#366342"
+    },
+    {
+      "id": 30,
+      "type": "Image Save",
+      "pos": [
+        1740,
+        -60
+      ],
+      "size": {
+        "0": 291.2369689941406,
+        "1": 342
+      },
+      "flags": {},
+      "order": 28,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 96
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 74,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Save"
+      },
+      "widgets_values": [
+        "[time(%Y-%m-%d)]",
+        "ComfyUI",
+        "_",
+        4,
+        "false",
+        "png",
+        100,
+        "false",
+        "false",
+        "true",
+        "true",
+        "true",
+        "false"
+      ],
+      "color": "#22424f",
+      "bgcolor": "#365663"
+    },
+    {
+      "id": 54,
+      "type": "PreviewImage",
+      "pos": [
+        1060,
+        20
+      ],
+      "size": {
+        "0": 444.3459777832031,
+        "1": 372.7501525878906
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 189
+        }
+      ],
+      "title": "Step 4 - Final Output (Saved)",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#22254f",
+      "bgcolor": "#363963"
+    },
+    {
+      "id": 26,
+      "type": "CR Aspect Ratio",
+      "pos": [
+        -1824.9623855917441,
+        -484.54502497259733
+      ],
+      "size": {
+        "0": 340,
+        "1": 260
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            39
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            40
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "upscale_factor",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "links": [
+            41
+          ],
+          "shape": 3,
+          "slot_index": 3
+        },
+        {
+          "name": "empty_latent",
+          "type": "LATENT",
+          "links": [],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Aspect Ratio"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        "SD1.5 - 3:2 landscape 768x512",
+        "Off",
+        1,
+        4
+      ],
+      "color": "#4f2222",
+      "bgcolor": "#633636"
+    },
+    {
+      "id": 16,
+      "type": "OneButtonPrompt",
+      "pos": [
+        -2260,
+        -460
+      ],
+      "size": {
+        "0": 360,
+        "1": 420
+      },
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            139
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "prompt_g",
+          "type": "STRING",
+          "links": [],
+          "shape": 3
+        },
+        {
+          "name": "prompt_l",
+          "type": "STRING",
+          "links": [],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OneButtonPrompt"
+      },
+      "widgets_values": [
+        5,
+        "scene",
+        "all - force multiple",
+        30,
+        "humanoid",
+        "(((battle scene, wide angle)))",
+        "",
+        "generic objects",
+        "celebrities e.a.",
+        "female",
+        "the X of Y concepts",
+        false,
+        988911643564661,
+        "fixed"
+      ],
+      "color": "#4f3422",
+      "bgcolor": "#634836"
+    },
+    {
+      "id": 17,
+      "type": "ttN textDebug",
+      "pos": [
+        -1060,
+        440
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 144,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            152
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN textDebug",
+        "ttNnodeVersion": "1.0."
+      },
+      "widgets_values": [
+        true,
+        "Promts",
+        "On Change",
+        "",
+        "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),"
+      ],
+      "color": "#4f2235",
+      "bgcolor": "#633649"
+    },
+    {
+      "id": 7,
+      "type": "GlobalSeed //Inspire",
+      "pos": [
+        -1760,
+        -160
+      ],
+      "size": {
+        "0": 260,
+        "1": 140
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "properties": {
+        "Node name for S&R": "GlobalSeed //Inspire"
+      },
+      "widgets_values": [
+        988911643564661,
+        true,
+        "randomize",
+        833268978663965
+      ],
+      "color": "#224f4a",
+      "bgcolor": "#36635e"
+    },
+    {
+      "id": 71,
+      "type": "Image Lucy Sharpen",
+      "pos": [
+        -220,
+        -280
+      ],
+      "size": {
+        "0": 409.7664794921875,
+        "1": 506
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 17,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 98
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            99
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Lucy Sharpen"
+      },
+      "widgets_values": [
+        12,
+        1
+      ],
+      "color": "#3c4f22",
+      "bgcolor": "#506336"
+    },
+    {
+      "id": 70,
+      "type": "PreviewImage",
+      "pos": [
+        -260,
+        -200
+      ],
+      "size": {
+        "0": 421.06268310546875,
+        "1": 382.9523010253906
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 18,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 191
+        }
+      ],
+      "title": "Step 1 - FirstImage (Small)",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#224f37",
+      "bgcolor": "#36634b"
+    },
+    {
+      "id": 99,
+      "type": "Image Lucy Sharpen",
+      "pos": [
+        180,
+        -280
+      ],
+      "size": {
+        "0": 220,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 20,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 147
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            203,
+            216
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Lucy Sharpen"
+      },
+      "widgets_values": [
+        12,
+        1
+      ],
+      "color": "#284f22",
+      "bgcolor": "#3c6336"
+    },
+    {
+      "id": 72,
+      "type": "PreviewImage",
+      "pos": [
+        160,
+        -200
+      ],
+      "size": {
+        "0": 220,
+        "1": 240
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 21,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 215
+        }
+      ],
+      "title": "Step 2 - SharpenImage",
+      "properties": {
+        "Node name for S&R": "SharpenImage"
+      },
+      "color": "#224f41",
+      "bgcolor": "#366355"
+    },
+    {
+      "id": 55,
+      "type": "PreviewImage",
+      "pos": [
+        380,
+        -120
+      ],
+      "size": {
+        "0": 316.6339111328125,
+        "1": 378.520751953125
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 23,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 216
+        }
+      ],
+      "title": "Step 3 - Intermidiate Output (Scaled)",
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#224b4f",
+      "bgcolor": "#365f63"
+    },
+    {
+      "id": 5,
+      "type": "ttN hiresfixScale",
+      "pos": [
+        0,
+        -280
+      ],
+      "size": {
+        "0": 340,
+        "1": 320
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 19,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 99
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 8
+        }
+      ],
+      "outputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            147,
+            215
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "infoWidgetHidden": false,
+        "Node name for S&R": "ttN hiresfixScale",
+        "ttNnodeVersion": "1.0.3"
+      },
+      "widgets_values": [
+        "4xUltrasharp_4xUltrasharpV10.pt",
+        "Rescale based on model upscale image size ⬇",
+        true,
+        "lanczos",
+        "to longer side - maintain aspect",
+        50,
+        1024,
+        1024,
+        1440,
+        "disabled",
+        "Hide",
+        "ComfyUI",
+        true
+      ],
+      "color": "#324f22",
+      "bgcolor": "#466336"
+    },
+    {
+      "id": 80,
+      "type": "VAEEncode",
+      "pos": [
+        420,
+        -280
+      ],
+      "size": {
+        "0": 160,
+        "1": 46
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 203
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 113
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            225
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "color": "#224f25",
+      "bgcolor": "#366339"
+    },
+    {
+      "id": 2,
+      "type": "ttN pipeKSampler",
+      "pos": [
+        -420,
+        -400
+      ],
+      "size": {
+        "0": 400,
+        "1": 506
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "link": 1
+        },
+        {
+          "name": "optional_model",
+          "type": "MODEL",
+          "link": 5
+        },
+        {
+          "name": "optional_positive",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_latent",
+          "type": "LATENT",
+          "link": null
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "optional_clip",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "xyPlot",
+          "type": "XYPLOT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": [
+            88
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": [
+            134
+          ],
+          "shape": 3,
+          "slot_index": 2
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            8,
+            113
+          ],
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            98,
+            191
+          ],
+          "shape": 3,
+          "slot_index": 7
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "title": "SDA Sampler",
+      "properties": {
+        "Node name for S&R": "ttN pipeKSampler",
+        "ttNnodeVersion": "1.0.5"
+      },
+      "widgets_values": [
+        "sam_yang_offset_right_filesize.safetensors",
+        1.6,
+        1,
+        "None",
+        2,
+        "disabled",
+        "Sample",
+        15,
+        1.5,
+        "lcm",
+        "sgm_uniform",
+        1,
+        "Hide",
+        "ComfyUI",
+        988911643564661,
+        "randomize"
+      ],
+      "color": "#4e4f22",
+      "bgcolor": "#626336"
+    },
+    {
+      "id": 1,
+      "type": "ttN pipeLoader",
+      "pos": [
+        -1280,
+        -440
+      ],
+      "size": {
+        "0": 400,
+        "1": 660
+      },
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model_override",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "clip_override",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "optional_lora_stack",
+          "type": "LORA_STACK",
+          "link": null
+        },
+        {
+          "name": "empty_latent_width",
+          "type": "INT",
+          "link": 39,
+          "widget": {
+            "name": "empty_latent_width"
+          }
+        },
+        {
+          "name": "empty_latent_height",
+          "type": "INT",
+          "link": 40,
+          "widget": {
+            "name": "empty_latent_height"
+          }
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "link": 41,
+          "widget": {
+            "name": "batch_size"
+          }
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 143,
+          "widget": {
+            "name": "positive"
+          },
+          "slot_index": 6
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": [
+            1
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            2
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN pipeLoader",
+        "ttNnodeVersion": "1.1.2"
+      },
+      "widgets_values": [
+        "revAnimated_v122EOL.safetensors",
+        "Default",
+        "Baked VAE",
+        -2,
+        "LCM15.safetensors",
+        1,
+        1,
+        "None",
+        0.5,
+        1,
+        "None",
+        0.4,
+        1.4000000000000001,
+        "((best quality)), ((masterpiece)), (detailed), beautiful face, female warrior, (defiance512:1.2), big eyes, heavy black iron armor, detailed helmet, intense gaze, battle-ready, contrasting soft skin, (lighting:1.2), close-up portrait, 4:3 aspect ratio",
+        "length+mean",
+        "comfy",
+        "(worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1), (greyscale), multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, watermark, 3d, cartoon, anime, sketches, (worst quality, bad quality, child, cropped:1.4) ((monochrome)), ((grayscale)), (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8), (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8), (bad_quality:0.8)",
+        "none",
+        "comfy",
+        512,
+        712,
+        1,
+        988911643564661,
+        "fixed"
+      ],
+      "color": "#4f3e22",
+      "bgcolor": "#635236"
+    },
+    {
+      "id": 6,
+      "type": "ttN pipeKSampler",
+      "pos": [
+        580,
+        -420
+      ],
+      "size": [
+        360,
+        500
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 24,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "link": 88
+        },
+        {
+          "name": "optional_model",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "optional_positive",
+          "type": "CONDITIONING",
+          "link": 134
+        },
+        {
+          "name": "optional_negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_latent",
+          "type": "LATENT",
+          "link": 225
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "optional_clip",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "xyPlot",
+          "type": "XYPLOT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [],
+          "shape": 3,
+          "slot_index": 6
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            45,
+            57,
+            189
+          ],
+          "shape": 3,
+          "slot_index": 7
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3,
+          "slot_index": 8
+        }
+      ],
+      "title": "Add Detail Sampler",
+      "properties": {
+        "Node name for S&R": "pipeKSampler",
+        "ttNnodeVersion": "1.0.5"
+      },
+      "widgets_values": [
+        "add_detail.safetensors",
+        -1.2000000000000002,
+        1,
+        "None",
+        2,
+        "disabled",
+        "Sample",
+        3,
+        1.5,
+        "lcm",
+        "sgm_uniform",
+        0.4,
+        "Hide",
+        "ComfyUI",
+        988911643564661,
+        "randomize"
+      ],
+      "color": "#4f4722",
+      "bgcolor": "#635b36"
+    },
+    {
+      "id": 106,
+      "type": "pROMPT_iNPUT",
+      "pos": [
+        -2280,
+        160
+      ],
+      "size": {
+        "0": 340,
+        "1": 480
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            658
+          ],
+          "shape": 3,
+          "label": "Static Input Prompt"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            659
+          ],
+          "shape": 3,
+          "label": "Additional Style Input"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            660
+          ],
+          "shape": 3,
+          "label": "Experimental Prompt 1"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            661
+          ],
+          "shape": 3,
+          "slot_index": 3,
+          "label": "Experimental Prompt 2"
+        }
+      ],
+      "title": "Prompt Input",
+      "properties": {
+        "nestedData": {
+          "nestedNodes": [
+            {
+              "id": 10,
+              "type": "ttN text",
+              "pos": [
+                -2455,
+                -240
+              ],
+              "size": {
+                "0": 280,
+                "1": 200
+              },
+              "flags": {},
+              "order": 5,
+              "mode": 0,
+              "inputs": [],
+              "outputs": [
+                {
+                  "name": "text",
+                  "type": "STRING",
+                  "links": [
+                    654
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                }
+              ],
+              "title": "Static Text Prompt",
+              "properties": {
+                "Node name for S&R": "ttN text",
+                "ttNnodeVersion": "1.0.0"
+              },
+              "widgets_values": [
+                "masterwork Digital art, intricate details, small siri from the witcher Enchanter, dressed in Classic Flare jeans, (by Abbas Kiarostami:1.1) , James Gillray, Goth Art, psychedelic colors"
+              ],
+              "color": "#254f22",
+              "bgcolor": "#396336",
+              "serializedWidgets": [
+                {
+                  "type": "customtext",
+                  "name": "text",
+                  "value": "masterwork Digital art, intricate details, small siri from the witcher Enchanter, dressed in Classic Flare jeans, (by Abbas Kiarostami:1.1) , James Gillray, Goth Art, psychedelic colors",
+                  "element": {},
+                  "options": {
+                    "hideOnZoom": true,
+                    "selectOn": [
+                      "focus",
+                      "click"
+                    ]
+                  },
+                  "inputEl": {}
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "type": "ttN text",
+              "pos": [
+                -2455,
+                0
+              ],
+              "size": {
+                "0": 280,
+                "1": 200
+              },
+              "flags": {},
+              "order": 6,
+              "mode": 0,
+              "outputs": [
+                {
+                  "name": "text",
+                  "type": "STRING",
+                  "links": [
+                    655
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                }
+              ],
+              "title": "Additional Style Prompt",
+              "properties": {
+                "Node name for S&R": "ttN text",
+                "ttNnodeVersion": "1.0.0"
+              },
+              "widgets_values": [
+                "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  ({white|black} skin type) , (age  {17|22|27|32|37|42|47}),  ({green|red|white|blue|blonde|black|brown} hair),"
+              ],
+              "color": "#22484f",
+              "bgcolor": "#365c63",
+              "serializedWidgets": [
+                {
+                  "type": "customtext",
+                  "name": "text",
+                  "value": "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  ({white|black} skin type) , (age  {17|22|27|32|37|42|47}),  ({green|red|white|blue|blonde|black|brown} hair),",
+                  "element": {},
+                  "options": {
+                    "hideOnZoom": true,
+                    "selectOn": [
+                      "focus",
+                      "click"
+                    ]
+                  },
+                  "inputEl": {}
+                }
+              ]
+            },
+            {
+              "id": 98,
+              "type": "ttN text",
+              "pos": [
+                -2195,
+                400
+              ],
+              "size": {
+                "0": 280,
+                "1": 200
+              },
+              "flags": {},
+              "order": 7,
+              "mode": 0,
+              "outputs": [
+                {
+                  "name": "text",
+                  "type": "STRING",
+                  "links": [
+                    656
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                }
+              ],
+              "title": "Experimental 1",
+              "properties": {
+                "Node name for S&R": "ttN text",
+                "ttNnodeVersion": "1.0.0"
+              },
+              "widgets_values": [
+                ""
+              ],
+              "color": "#4f2242",
+              "bgcolor": "#633656",
+              "serializedWidgets": [
+                {
+                  "type": "customtext",
+                  "name": "text",
+                  "value": "",
+                  "element": {},
+                  "options": {
+                    "hideOnZoom": true,
+                    "selectOn": [
+                      "focus",
+                      "click"
+                    ]
+                  },
+                  "inputEl": {}
+                }
+              ]
+            },
+            {
+              "id": 105,
+              "type": "ttN text",
+              "pos": [
+                -2015,
+                480
+              ],
+              "size": {
+                "0": 280,
+                "1": 200
+              },
+              "flags": {},
+              "order": 8,
+              "mode": 0,
+              "outputs": [
+                {
+                  "name": "text",
+                  "type": "STRING",
+                  "links": [
+                    657
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                }
+              ],
+              "title": "Experimental 2",
+              "properties": {
+                "Node name for S&R": "ttN text",
+                "ttNnodeVersion": "1.0.0"
+              },
+              "widgets_values": [
+                "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),"
+              ],
+              "color": "#4f222a",
+              "bgcolor": "#63363e",
+              "serializedWidgets": [
+                {
+                  "type": "customtext",
+                  "name": "text",
+                  "value": "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),",
+                  "element": {},
+                  "options": {
+                    "hideOnZoom": true,
+                    "selectOn": [
+                      "focus",
+                      "click"
+                    ]
+                  },
+                  "inputEl": {}
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "widgets_values": [
+        "masterwork Digital art, intricate details, small siri from the witcher Enchanter, dressed in Classic Flare jeans, (by Abbas Kiarostami:1.1) , James Gillray, Goth Art, psychedelic colors",
+        "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (white skin type) , (age  17),  (blue hair),",
+        "",
+        "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),"
+      ],
+      "color": "#3b224f",
+      "bgcolor": "#4f3663"
+    },
+    {
+      "id": 90,
+      "type": "CR Text Input Switch (4 way)",
+      "pos": [
+        -1600,
+        160
+      ],
+      "size": {
+        "0": 260.3999938964844,
+        "1": 120
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 141,
+          "widget": {
+            "name": "text1"
+          },
+          "label": "Dynamic Input"
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 142,
+          "widget": {
+            "name": "text2"
+          },
+          "label": "Static Input"
+        },
+        {
+          "name": "text3",
+          "type": "STRING",
+          "link": 660,
+          "widget": {
+            "name": "text3"
+          },
+          "label": "Experimental 1"
+        },
+        {
+          "name": "text4",
+          "type": "STRING",
+          "link": 661,
+          "widget": {
+            "name": "text4"
+          },
+          "label": "Experimental 2"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            143,
+            144
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Input Switch (4 way)"
+      },
+      "widgets_values": [
+        1,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "#44224f",
+      "bgcolor": "#583663"
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "PIPE_LINE"
+    ],
+    [
+      2,
+      1,
+      1,
+      3,
+      0,
+      "MODEL"
+    ],
+    [
+      4,
+      3,
+      0,
+      4,
+      0,
+      "MODEL"
+    ],
+    [
+      5,
+      4,
+      0,
+      2,
+      1,
+      "MODEL"
+    ],
+    [
+      8,
+      2,
+      5,
+      5,
+      1,
+      "VAE"
+    ],
+    [
+      39,
+      26,
+      0,
+      1,
+      3,
+      "INT"
+    ],
+    [
+      40,
+      26,
+      1,
+      1,
+      4,
+      "INT"
+    ],
+    [
+      41,
+      26,
+      3,
+      1,
+      5,
+      "INT"
+    ],
+    [
+      45,
+      6,
+      7,
+      29,
+      0,
+      "IMAGE"
+    ],
+    [
+      56,
+      29,
+      0,
+      33,
+      0,
+      "IMAGE"
+    ],
+    [
+      57,
+      6,
+      7,
+      33,
+      1,
+      "IMAGE"
+    ],
+    [
+      68,
+      41,
+      0,
+      37,
+      0,
+      "STRING"
+    ],
+    [
+      72,
+      52,
+      1,
+      53,
+      0,
+      "STRING"
+    ],
+    [
+      73,
+      53,
+      0,
+      37,
+      1,
+      "STRING"
+    ],
+    [
+      74,
+      53,
+      0,
+      30,
+      1,
+      "STRING"
+    ],
+    [
+      88,
+      2,
+      0,
+      6,
+      0,
+      "PIPE_LINE"
+    ],
+    [
+      96,
+      33,
+      0,
+      30,
+      0,
+      "IMAGE"
+    ],
+    [
+      98,
+      2,
+      7,
+      71,
+      0,
+      "IMAGE"
+    ],
+    [
+      99,
+      71,
+      0,
+      5,
+      0,
+      "IMAGE"
+    ],
+    [
+      113,
+      2,
+      5,
+      80,
+      1,
+      "VAE"
+    ],
+    [
+      134,
+      2,
+      2,
+      6,
+      2,
+      "CONDITIONING"
+    ],
+    [
+      139,
+      16,
+      0,
+      96,
+      0,
+      "STRING"
+    ],
+    [
+      141,
+      96,
+      4,
+      90,
+      0,
+      "STRING"
+    ],
+    [
+      142,
+      96,
+      5,
+      90,
+      1,
+      "STRING"
+    ],
+    [
+      143,
+      90,
+      0,
+      1,
+      6,
+      "STRING"
+    ],
+    [
+      144,
+      90,
+      0,
+      17,
+      0,
+      "STRING"
+    ],
+    [
+      147,
+      5,
+      1,
+      99,
+      0,
+      "IMAGE"
+    ],
+    [
+      152,
+      17,
+      0,
+      100,
+      0,
+      "*"
+    ],
+    [
+      189,
+      6,
+      7,
+      54,
+      0,
+      "IMAGE"
+    ],
+    [
+      191,
+      2,
+      7,
+      70,
+      0,
+      "IMAGE"
+    ],
+    [
+      203,
+      99,
+      0,
+      80,
+      0,
+      "IMAGE"
+    ],
+    [
+      215,
+      5,
+      1,
+      72,
+      0,
+      "IMAGE"
+    ],
+    [
+      216,
+      99,
+      0,
+      55,
+      0,
+      "IMAGE"
+    ],
+    [
+      225,
+      80,
+      0,
+      6,
+      4,
+      "LATENT"
+    ],
+    [
+      259,
+      40,
+      0,
+      41,
+      1,
+      "STRING"
+    ],
+    [
+      260,
+      100,
+      0,
+      41,
+      2,
+      "STRING"
+    ],
+    [
+      261,
+      52,
+      1,
+      41,
+      0,
+      "STRING"
+    ],
+    [
+      658,
+      106,
+      0,
+      96,
+      1,
+      "STRING"
+    ],
+    [
+      659,
+      106,
+      1,
+      96,
+      2,
+      "STRING"
+    ],
+    [
+      660,
+      106,
+      2,
+      90,
+      2,
+      "STRING"
+    ],
+    [
+      661,
+      106,
+      3,
+      90,
+      3,
+      "STRING"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Save Image and Text File",
+      "bounding": [
+        962,
+        -569,
+        1082,
+        1246
+      ],
+      "color": "#8AA",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Image Processing",
+      "bounding": [
+        -452,
+        -571,
+        1388,
+        1248
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Pipe generation",
+      "bounding": [
+        -1313,
+        -572,
+        844,
+        1247
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Generation",
+      "bounding": [
+        -2292,
+        -572,
+        964,
+        1243
+      ],
+      "color": "#A88",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {},
+  "version": 0.4
+}

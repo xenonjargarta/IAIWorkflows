@@ -1,0 +1,5677 @@
+{
+  "last_node_id": 234,
+  "last_link_id": 7150,
+  "nodes": [
+    {
+      "id": 39,
+      "type": "Fans Text Concatenate",
+      "pos": [
+        3235.2858944720783,
+        -510.2109004156421
+      ],
+      "size": {
+        "0": 210,
+        "1": 522
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 50,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 291,
+          "widget": {
+            "name": "prompt"
+          },
+          "slot_index": 0,
+          "label": "Seed Number"
+        },
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 292,
+          "widget": {
+            "name": "text_a"
+          },
+          "label": "Negative Prompt"
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 592,
+          "widget": {
+            "name": "text_b"
+          },
+          "slot_index": 2,
+          "label": "Positive Prompt"
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": 595,
+          "widget": {
+            "name": "text_c"
+          },
+          "label": "Additional Text"
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          }
+        },
+        {
+          "name": "text_e",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_e"
+          }
+        },
+        {
+          "name": "text_f",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_f"
+          }
+        },
+        {
+          "name": "text_g",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_g"
+          }
+        },
+        {
+          "name": "text_h",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_h"
+          }
+        },
+        {
+          "name": "text_i",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_i"
+          }
+        },
+        {
+          "name": "text_j",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_j"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            293
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "JSON Content",
+      "properties": {
+        "Node name for S&R": "Fans Text Concatenate"
+      },
+      "widgets_values": [
+        "true",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "#33224f",
+      "bgcolor": "#473663"
+    },
+    {
+      "id": 62,
+      "type": "Reroute",
+      "pos": [
+        2978.2242066874996,
+        -234.13738351562503
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 48,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 3856,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            592
+          ]
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      },
+      "color": "#4f2242",
+      "bgcolor": "#633656"
+    },
+    {
+      "id": 54,
+      "type": "ReroutePrimitive|pysssss",
+      "pos": [
+        2774.333181606249,
+        -1084.8459437625002
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 62,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "value",
+          "type": "*",
+          "link": 6919,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "*",
+          "type": "IMAGE",
+          "links": [
+            570,
+            3053
+          ],
+          "shape": 3,
+          "label": "IMAGE",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ReroutePrimitive|pysssss"
+      },
+      "color": "#2b4f22",
+      "bgcolor": "#3f6336"
+    },
+    {
+      "id": 63,
+      "type": "Text _O",
+      "pos": [
+        2928.2242066874996,
+        -474.13738351562495
+      ],
+      "size": {
+        "0": 210,
+        "1": 80
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 0,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            595
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Additional Text",
+      "properties": {
+        "Node name for S&R": "Text _O"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#3c224f",
+      "bgcolor": "#503663"
+    },
+    {
+      "id": 17,
+      "type": "ModelSamplingDiscrete",
+      "pos": [
+        699.0970702080076,
+        -762.2763605937495
+      ],
+      "size": {
+        "0": 315,
+        "1": 82
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 55,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 10
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            6871
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ModelSamplingDiscrete"
+      },
+      "widgets_values": [
+        "lcm",
+        false
+      ],
+      "color": "#223d4f",
+      "bgcolor": "#365163"
+    },
+    {
+      "id": 157,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1238.548583984375,
+        "1": -486.45001220703125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 20,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 3797,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            4921
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ]
+      },
+      "color": "#37224f",
+      "bgcolor": "#4b3663"
+    },
+    {
+      "id": 170,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -0.7362837791442871,
+        "1": -991.7647705078125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 27,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 3809,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "links": [
+            4126
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ]
+      },
+      "color": "#224f3c",
+      "bgcolor": "#366350"
+    },
+    {
+      "id": 169,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -0.7362837791442871,
+        "1": -1044.84814453125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 26,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 3806,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            4127
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ]
+      },
+      "color": "#224f2c",
+      "bgcolor": "#366340"
+    },
+    {
+      "id": 168,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -0.7362837791442871,
+        "1": -1104.84814453125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 25,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 3819,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            4128
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ]
+      },
+      "color": "#3c4f22",
+      "bgcolor": "#506336"
+    },
+    {
+      "id": 171,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -35.88801574707031,
+        "1": -764.3506469726562,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 49,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 4100,
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            3811
+          ],
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Bottom",
+          "Top"
+        ]
+      },
+      "color": "#22424f",
+      "bgcolor": "#365663"
+    },
+    {
+      "id": 36,
+      "type": "Reroute",
+      "pos": [
+        2978.2242066874996,
+        -204.137383515625
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 35,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 4098,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "STRING",
+          "links": [
+            292
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      },
+      "color": "#4f223b",
+      "bgcolor": "#63364f"
+    },
+    {
+      "id": 180,
+      "type": "ttN textDebug",
+      "pos": [
+        -255.88801872656245,
+        -224.350657265625
+      ],
+      "size": {
+        "0": 460,
+        "1": 270
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": false
+      },
+      "order": 47,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 4689,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            3856,
+            4100
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Positive Debug",
+      "properties": {
+        "Node name for S&R": "Positive Debug",
+        "ttNnodeVersion": "1.0."
+      },
+      "widgets_values": [
+        true,
+        "Positive Prompt",
+        "Always",
+        "((a woman standing on a bridge wearing a black blazer jacket and a black and white polka skirt)),raw photo, realistic, (samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)), film grain, ((cute smiling)), ((small lips)), , , , , [german:bangladeshi:0.5:0.5] woman 40-years-old, (blunt cut hairstyle:1.25), (disheveled:0.39), (skin details, skin texture:1.09), (skin pores:0.35), (freckles:0.23), (eyes details:1.35), (iris details:1.32)",
+        "((a woman taking a picture of herself in a mirror with a cell in her hand)),raw photo, realistic, (samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)), film grain, ((cute smiling)), ((small lips)), , , , ,"
+      ],
+      "color": "#4f223f",
+      "bgcolor": "#633653"
+    },
+    {
+      "id": 188,
+      "type": "ttN textDebug",
+      "pos": [
+        -255.88801872656245,
+        -194.35065726562502
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": false
+      },
+      "order": 31,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 4684,
+          "widget": {
+            "name": "text"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            4098,
+            4699
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Negative Debug",
+      "properties": {
+        "Node name for S&R": "Negatve Debug",
+        "ttNnodeVersion": "1.0."
+      },
+      "widgets_values": [
+        true,
+        "Negative Prompt",
+        "Always",
+        "(worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1),  multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, sketches, (worst quality, bad quality, child, cropped:1.4), (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8), (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8), (bad_quality:0.8) (worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1),  multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, sketches, (worst quality, bad quality, child, cropped:1.4), ",
+        "(worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1),  multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, sketches, (worst quality, bad quality, child, cropped:1.4), (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8), (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8), (bad_quality:0.8) (worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1),  multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, sketches, (worst quality, bad quality, child, cropped:1.4), "
+      ],
+      "color": "#4f2232",
+      "bgcolor": "#633646"
+    },
+    {
+      "id": 158,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1298.548583984375,
+        "1": -839.2774658203125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 32,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 3617,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "full_composed_prompt",
+          "type": "STRING",
+          "links": [
+            4923
+          ],
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Bottom"
+        ]
+      },
+      "color": "#224f49",
+      "bgcolor": "#36635d"
+    },
+    {
+      "id": 156,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1738.548583984375,
+        "1": -839.2774658203125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 24,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 4679,
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "full_composed_prompt",
+          "type": "STRING",
+          "links": [
+            3617,
+            4693
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Top",
+          "Right"
+        ]
+      },
+      "color": "#224f45",
+      "bgcolor": "#366359"
+    },
+    {
+      "id": 160,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1238.548583984375,
+        "1": -789.2774658203125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 1,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": null,
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "*",
+          "links": [
+            4924
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Top",
+          "Right"
+        ],
+        "showLabel": true
+      },
+      "color": "#224e4f",
+      "bgcolor": "#366263"
+    },
+    {
+      "id": 165,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1238.548583984375,
+        "1": -416.45001220703125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 21,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 4681,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4919
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ]
+      },
+      "color": "#43224f",
+      "bgcolor": "#573663"
+    },
+    {
+      "id": 166,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1238.548583984375,
+        "1": -366.45001220703125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 28,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 3795,
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4918
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Bottom",
+          "Right"
+        ]
+      },
+      "color": "#4c224f",
+      "bgcolor": "#603663"
+    },
+    {
+      "id": 198,
+      "type": "Reroute",
+      "pos": [
+        -1668.5484402359252,
+        -831.5184471114121
+      ],
+      "size": [
+        75,
+        26
+      ],
+      "flags": {},
+      "order": 33,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 4693,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "full_composed_prompt",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "showOutputText": false,
+        "horizontal": false
+      },
+      "color": "#224f4d",
+      "bgcolor": "#366361"
+    },
+    {
+      "id": 172,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": 6.040926933288574,
+        "1": -764.8480834960938,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 36,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 4699,
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            4072
+          ],
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Bottom",
+          "Top"
+        ]
+      },
+      "color": "#22464f",
+      "bgcolor": "#365a63"
+    },
+    {
+      "id": 190,
+      "type": "Fans Text Concatenate",
+      "pos": [
+        -565.8880187265627,
+        -194.35065726562502
+      ],
+      "size": {
+        "0": 310,
+        "1": 522
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 22,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 4683,
+          "widget": {
+            "name": "prompt"
+          }
+        },
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 4692,
+          "widget": {
+            "name": "text_a"
+          }
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_b"
+          }
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_c"
+          }
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_d"
+          }
+        },
+        {
+          "name": "text_e",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_e"
+          }
+        },
+        {
+          "name": "text_f",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_f"
+          }
+        },
+        {
+          "name": "text_g",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_g"
+          }
+        },
+        {
+          "name": "text_h",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_h"
+          }
+        },
+        {
+          "name": "text_i",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_i"
+          }
+        },
+        {
+          "name": "text_j",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_j"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4684
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Build Negative Prompt",
+      "properties": {
+        "Node name for S&R": "Fans Text Concatenate"
+      },
+      "widgets_values": [
+        "false",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "#4f2236",
+      "bgcolor": "#63364a"
+    },
+    {
+      "id": 192,
+      "type": "Replace Text _O",
+      "pos": [
+        -430,
+        -540
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 43,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 4701,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4687
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Reomve \", ,\"",
+      "properties": {
+        "Node name for S&R": "Replace Text _O"
+      },
+      "widgets_values": [
+        "",
+        ", ,",
+        ","
+      ],
+      "color": "#2b224f",
+      "bgcolor": "#3f3663"
+    },
+    {
+      "id": 193,
+      "type": "Trim Text _O",
+      "pos": [
+        -270,
+        -540
+      ],
+      "size": {
+        "0": 320,
+        "1": 60
+      },
+      "flags": {
+        "collapsed": true
+      },
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 4687,
+          "widget": {
+            "name": "text"
+          },
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4698
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Trim ",
+      "properties": {
+        "Node name for S&R": "Trim Text _O"
+      },
+      "widgets_values": [
+        ""
+      ],
+      "color": "#2f224f",
+      "bgcolor": "#433663"
+    },
+    {
+      "id": 194,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -150,
+        "1": -570,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 45,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 4698,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4690
+          ],
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Bottom"
+        ]
+      },
+      "color": "#27224f",
+      "bgcolor": "#3b3663"
+    },
+    {
+      "id": 167,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -788.5485229492188,
+        "1": -789.2774658203125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 30,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 7150,
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4925
+          ],
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Top",
+          "Bottom"
+        ]
+      },
+      "color": "#22494f",
+      "bgcolor": "#365d63"
+    },
+    {
+      "id": 197,
+      "type": "Text _O",
+      "pos": [
+        -1055.4324968374876,
+        -255.83569615438103
+      ],
+      "size": {
+        "0": 400,
+        "1": 150
+      },
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4692
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Negative (Static)",
+      "properties": {
+        "Node name for S&R": "Text _O"
+      },
+      "widgets_values": [
+        "(worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1),  multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, sketches, (worst quality, bad quality, child, cropped:1.4),"
+      ],
+      "color": "#4f2247",
+      "bgcolor": "#63365b"
+    },
+    {
+      "id": 159,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1238.548583984375,
+        "1": -576.4498291015625,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {
+        "pinned": false
+      },
+      "order": 23,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 3971,
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4922
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Top",
+          "Right"
+        ]
+      },
+      "color": "#22224f",
+      "bgcolor": "#363663"
+    },
+    {
+      "id": 77,
+      "type": "OneButtonPrompt",
+      "pos": [
+        -2138.5484402359243,
+        -469.2777244551622
+      ],
+      "size": {
+        "0": 360,
+        "1": 440
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 3,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            3797
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "prompt_g",
+          "type": "STRING",
+          "links": [],
+          "shape": 3
+        },
+        {
+          "name": "prompt_l",
+          "type": "STRING",
+          "links": [],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OneButtonPrompt"
+      },
+      "widgets_values": [
+        5,
+        "anime",
+        "anime key visual",
+        20,
+        "humanoid",
+        "",
+        "",
+        "buildings",
+        "celebrities e.a.",
+        "female",
+        "lines from songs",
+        false,
+        147924308281093,
+        "randomize"
+      ],
+      "color": "#3f224f",
+      "bgcolor": "#533663"
+    },
+    {
+      "id": 196,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -290,
+        "1": -320,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 46,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 4690,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4689
+          ],
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Bottom"
+        ]
+      },
+      "color": "#4f224b",
+      "bgcolor": "#63365f"
+    },
+    {
+      "id": 152,
+      "type": "Text _O",
+      "pos": [
+        -1708.5484402359252,
+        -369.27772445516223
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 4,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4681
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text _O"
+      },
+      "widgets_values": [
+        ", a girl sexy posing in a photo studio, (((full body shot))), ((wearing a rainbow colored jeans))"
+      ],
+      "color": "#48224f",
+      "bgcolor": "#5c3663"
+    },
+    {
+      "id": 204,
+      "type": "BLIP Model Loader",
+      "pos": [
+        -1454.3954292135006,
+        -1954.8409415238114
+      ],
+      "size": {
+        "0": 250,
+        "1": 60
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "BLIP_MODEL",
+          "type": "BLIP_MODEL",
+          "links": [
+            5120
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BLIP Model Loader"
+      },
+      "widgets_values": [
+        "caption"
+      ],
+      "color": "#4f2922",
+      "bgcolor": "#633d36"
+    },
+    {
+      "id": 215,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -722.9191284179688,
+        "1": -1746.9088134765625,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 38,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 5422,
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            5423
+          ],
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Top",
+          "Left"
+        ]
+      },
+      "color": "#4f4222",
+      "bgcolor": "#635636"
+    },
+    {
+      "id": 211,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -752.9191284179688,
+        "1": -1306.9088134765625,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 41,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 5425,
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            5128
+          ],
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Top",
+          "Bottom"
+        ]
+      },
+      "color": "#494f22",
+      "bgcolor": "#5d6336"
+    },
+    {
+      "id": 58,
+      "type": "Text _O",
+      "pos": [
+        -1052.9190599703002,
+        -16.90925654109977
+      ],
+      "size": {
+        "0": 400,
+        "1": 130
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4683
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text _O"
+      },
+      "widgets_values": [
+        "(worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1),  multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, sketches, (worst quality, bad quality, child, cropped:1.4), (bad-hands-5:1.0), (badhandv4:1.0), (easynegative:0.8), (bad-artist-anime:0.8), (bad-artist:0.8), (bad_prompt:0.8), (bad-picture-chill-75v:0.8), (bad_prompt_version2:0.8), (bad_quality:0.8)"
+      ],
+      "color": "#4f222a",
+      "bgcolor": "#63363e"
+    },
+    {
+      "id": 218,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1182.919189453125,
+        "1": -326.90924072265625,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 4,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": null,
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "*",
+          "links": [
+            6171
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Bottom",
+          "Right"
+        ]
+      },
+      "color": "#4f224f",
+      "bgcolor": "#633663"
+    },
+    {
+      "id": 8,
+      "type": "GlobalSeed //Inspire",
+      "pos": [
+        -610,
+        -1040
+      ],
+      "size": {
+        "0": 250,
+        "1": 130
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 8,
+      "mode": 0,
+      "properties": {
+        "Node name for S&R": "GlobalSeed //Inspire"
+      },
+      "widgets_values": [
+        479570733,
+        true,
+        "randomize",
+        2557887635
+      ],
+      "color": "#224f30",
+      "bgcolor": "#366344"
+    },
+    {
+      "id": 4,
+      "type": "Text _O",
+      "pos": [
+        -1702.9190599703002,
+        -716.4500280254747
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 9,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3971
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text _O"
+      },
+      "widgets_values": [
+        "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)),  ({white|(black)} skin type) , (age  {17|22|27|32|37|42|47}),  from {USA|SWEDEN|JAPAN|INDIA|FRANCE|GERMANY}, film grain,({green|red|white|blue|blonde|black|brown} hair),"
+      ],
+      "color": "#22314f",
+      "bgcolor": "#364563"
+    },
+    {
+      "id": 65,
+      "type": "BilboXPhotoPrompt",
+      "pos": [
+        -2140,
+        -1110
+      ],
+      "size": {
+        "0": 360,
+        "1": 540
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 10,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "full_composed_prompt",
+          "type": "STRING",
+          "links": [
+            4679
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "subject_only",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BilboXPhotoPrompt"
+      },
+      "widgets_values": [
+        true,
+        "glamour photography",
+        "",
+        "full body",
+        "",
+        "golden hour",
+        "",
+        "Hasselblad 500CM",
+        "Ilford HP5 Plus",
+        "50mm",
+        "",
+        "Richard Avedon",
+        "glamour photography photo of , full body, golden hour, Hasselblad 500CM, Ilford HP5 Plus, 50mm, in the style of Richard Avedon",
+        "Yes"
+      ],
+      "color": "#404f22",
+      "bgcolor": "#546336"
+    },
+    {
+      "id": 202,
+      "type": "Image scale to side",
+      "pos": [
+        -1454.3954292135006,
+        -1844.8409415238098
+      ],
+      "size": {
+        "0": 250,
+        "1": 130
+      },
+      "flags": {},
+      "order": 29,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 7078
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            5119,
+            6413
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image scale to side"
+      },
+      "widgets_values": [
+        800,
+        "Longest",
+        "bilinear",
+        "center"
+      ],
+      "color": "#4f3a22",
+      "bgcolor": "#634e36"
+    },
+    {
+      "id": 212,
+      "type": "VAEEncode",
+      "pos": [
+        -1160,
+        -1400
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 54,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 6413
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 5286
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            6872
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "color": "#4c4f22",
+      "bgcolor": "#606336"
+    },
+    {
+      "id": 216,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1150,
+        "1": -1750,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 39,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 5423,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0,
+          "widget": {
+            "name": "value"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            5424
+          ],
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Right",
+          "Bottom"
+        ]
+      },
+      "color": "#4f3e22",
+      "bgcolor": "#635236"
+    },
+    {
+      "id": 220,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -1225.2633056640625,
+        "1": -1476.8780517578125,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": null,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "",
+          "type": "*",
+          "links": null,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ]
+      },
+      "color": "#4f4f22",
+      "bgcolor": "#636336"
+    },
+    {
+      "id": 16,
+      "type": "PatchModelAddDownscale",
+      "pos": [
+        610,
+        -1070
+      ],
+      "size": {
+        "0": 352.79998779296875,
+        "1": 202
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 53,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "MODEL",
+          "link": 9
+        }
+      ],
+      "outputs": [
+        {
+          "name": "MODEL",
+          "type": "MODEL",
+          "links": [
+            10
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PatchModelAddDownscale"
+      },
+      "widgets_values": [
+        3,
+        2,
+        0,
+        0.35,
+        true,
+        "bicubic",
+        "bicubic"
+      ],
+      "color": "#224f24",
+      "bgcolor": "#366338"
+    },
+    {
+      "id": 107,
+      "type": "Note",
+      "pos": [
+        -590,
+        -2030
+      ],
+      "size": {
+        "0": 640,
+        "1": 310
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 12,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "658644618289029\n\nFantasy movies, inpired from Indiana Jones directed by George Lucas,Love,high fashion photography photo, full body, fill lighting, dutch angle, Leica M3, 50mm,anime key visual, masterpiece, Mystical Neptune, Shaolinn Monk, at Blue hour, Regret, Cryptidcore, specular lighting, F/5, highly detailed face,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)), (white skin type), (age  32), from SWEDEN, film grain,(red hair), "
+      ],
+      "color": "#4f2522",
+      "bgcolor": "#633936"
+    },
+    {
+      "id": 9,
+      "type": "CR Aspect Ratio",
+      "pos": [
+        -340,
+        -1080
+      ],
+      "size": {
+        "0": 310,
+        "1": 322
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 13,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "width",
+          "type": "INT",
+          "links": [
+            3819
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "height",
+          "type": "INT",
+          "links": [
+            3806
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "upscale_factor",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "prescale_factor",
+          "type": "FLOAT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "links": [
+            3809
+          ],
+          "shape": 3,
+          "slot_index": 4
+        },
+        {
+          "name": "empty_latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Aspect Ratio"
+      },
+      "widgets_values": [
+        1024,
+        1024,
+        "SD1.5 - 3:2 landscape 768x512",
+        "Off",
+        1,
+        1,
+        2
+      ],
+      "color": "#234f22",
+      "bgcolor": "#376336"
+    },
+    {
+      "id": 3,
+      "type": "Text _O",
+      "pos": [
+        -1720,
+        -40
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 14,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            3795
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text _O"
+      },
+      "widgets_values": [
+        ", a girl wearing a green jeans, (((topless)))"
+      ],
+      "color": "#4f222f",
+      "bgcolor": "#633643"
+    },
+    {
+      "id": 210,
+      "type": "Replace Text _O",
+      "pos": [
+        -922.9190599702997,
+        -1906.9092565410992
+      ],
+      "size": {
+        "0": 210,
+        "1": 123.99995422363281
+      },
+      "flags": {},
+      "order": 37,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "new",
+          "type": "STRING",
+          "link": 5125,
+          "widget": {
+            "name": "new"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            5422
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Replace Text _O"
+      },
+      "widgets_values": [
+        "((X))",
+        "X",
+        ""
+      ],
+      "color": "#4f3522",
+      "bgcolor": "#634936"
+    },
+    {
+      "id": 186,
+      "type": "Fans Text Concatenate",
+      "pos": [
+        -570,
+        -690
+      ],
+      "size": {
+        "0": 315,
+        "1": 522
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": false
+      },
+      "order": 42,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "link": 5128,
+          "widget": {
+            "name": "prompt"
+          }
+        },
+        {
+          "name": "text_a",
+          "type": "STRING",
+          "link": 4925,
+          "widget": {
+            "name": "text_a"
+          }
+        },
+        {
+          "name": "text_b",
+          "type": "STRING",
+          "link": 4924,
+          "widget": {
+            "name": "text_b"
+          },
+          "slot_index": 2
+        },
+        {
+          "name": "text_c",
+          "type": "STRING",
+          "link": 4923,
+          "widget": {
+            "name": "text_c"
+          },
+          "slot_index": 3
+        },
+        {
+          "name": "text_d",
+          "type": "STRING",
+          "link": 4922,
+          "widget": {
+            "name": "text_d"
+          },
+          "slot_index": 4
+        },
+        {
+          "name": "text_e",
+          "type": "STRING",
+          "link": 4921,
+          "widget": {
+            "name": "text_e"
+          },
+          "slot_index": 5
+        },
+        {
+          "name": "text_f",
+          "type": "STRING",
+          "link": 4919,
+          "widget": {
+            "name": "text_f"
+          },
+          "slot_index": 6
+        },
+        {
+          "name": "text_g",
+          "type": "STRING",
+          "link": 4918,
+          "widget": {
+            "name": "text_g"
+          },
+          "slot_index": 7
+        },
+        {
+          "name": "text_h",
+          "type": "STRING",
+          "link": 6171,
+          "widget": {
+            "name": "text_h"
+          },
+          "slot_index": 8
+        },
+        {
+          "name": "text_i",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_i"
+          }
+        },
+        {
+          "name": "text_j",
+          "type": "STRING",
+          "link": null,
+          "widget": {
+            "name": "text_j"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4701
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Build Positive Prompt",
+      "properties": {
+        "Node name for S&R": "Fans Text Concatenate"
+      },
+      "widgets_values": [
+        "false",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "#22284f",
+      "bgcolor": "#363c63"
+    },
+    {
+      "id": 221,
+      "type": "ttN pipeKSampler",
+      "pos": [
+        1130,
+        -1090
+      ],
+      "size": {
+        "0": 330,
+        "1": 580
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 56,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "link": 6870
+        },
+        {
+          "name": "optional_model",
+          "type": "MODEL",
+          "link": 6871
+        },
+        {
+          "name": "optional_positive",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_latent",
+          "type": "LATENT",
+          "link": 6872
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "optional_clip",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "xyPlot",
+          "type": "XYPLOT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": [
+            6917
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            6874,
+            6903
+          ],
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            6876
+          ],
+          "shape": 3,
+          "slot_index": 7
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN pipeKSampler",
+        "ttNnodeVersion": "1.0.5"
+      },
+      "widgets_values": [
+        "sam_yang_offset_right_filesize.safetensors",
+        1.6,
+        1,
+        "None",
+        2,
+        "disabled",
+        "Sample",
+        15,
+        1.5,
+        "lcm",
+        "karras",
+        0.01,
+        "Hide",
+        "ComfyUI",
+        29409771488952,
+        "randomize"
+      ],
+      "color": "#2f4f22",
+      "bgcolor": "#436336"
+    },
+    {
+      "id": 21,
+      "type": "VAEEncode",
+      "pos": [
+        2170,
+        -910
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 60,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 3480,
+          "slot_index": 0
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 6874
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            6918
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "color": "#224f41",
+      "bgcolor": "#366355"
+    },
+    {
+      "id": 118,
+      "type": "Image Lucy Sharpen",
+      "pos": [
+        1950,
+        -1020
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": false
+      },
+      "order": 59,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 6904
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3480
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Lucy Sharpen"
+      },
+      "widgets_values": [
+        12,
+        1
+      ],
+      "color": "#224f35",
+      "bgcolor": "#366349"
+    },
+    {
+      "id": 19,
+      "type": "Image Lucy Sharpen",
+      "pos": [
+        1510,
+        -740
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": true,
+        "pinned": false
+      },
+      "order": 57,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 6876
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            6902
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Lucy Sharpen"
+      },
+      "widgets_values": [
+        12,
+        1
+      ],
+      "color": "#22354f",
+      "bgcolor": "#364963"
+    },
+    {
+      "id": 55,
+      "type": "PreviewImage",
+      "pos": [
+        2880,
+        -1000
+      ],
+      "size": {
+        "0": 300,
+        "1": 250
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 63,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 570
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      },
+      "color": "#224f39",
+      "bgcolor": "#36634d"
+    },
+    {
+      "id": 189,
+      "type": "Fast Groups Bypasser (rgthree)",
+      "pos": {
+        "0": -600,
+        "1": -1650,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": {
+        "0": 740,
+        "1": 440
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 15,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "OPT_CONNECTION",
+          "type": "*",
+          "links": null
+        }
+      ],
+      "properties": {
+        "matchColors": "",
+        "matchTitle": "",
+        "showNav": true,
+        "sort": "position",
+        "customSortAlphabet": "",
+        "toggleRestriction": "default"
+      },
+      "color": "#4f4a22",
+      "bgcolor": "#635e36"
+    },
+    {
+      "id": 29,
+      "type": "Save Text File",
+      "pos": [
+        3470,
+        -690
+      ],
+      "size": {
+        "0": 320,
+        "1": 174
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 52,
+      "mode": 2,
+      "inputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "link": 293,
+          "widget": {
+            "name": "text"
+          }
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 120,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "title": "Save JSON",
+      "properties": {
+        "Node name for S&R": "Save Text File"
+      },
+      "widgets_values": [
+        "",
+        "./ComfyUI/output/[time(%Y-%m-%d)]",
+        "ComfyUI",
+        "_",
+        4
+      ],
+      "color": "#22254f",
+      "bgcolor": "#363963"
+    },
+    {
+      "id": 25,
+      "type": "Seed With Text",
+      "pos": [
+        2890,
+        -710
+      ],
+      "size": {
+        "0": 315,
+        "1": 170
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 16,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "Seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "Seed as Text",
+          "type": "STRING",
+          "links": [
+            291
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "File prefix",
+          "type": "STRING",
+          "links": [
+            103,
+            120
+          ],
+          "shape": 3,
+          "slot_index": 2
+        }
+      ],
+      "title": "Seed Number to Text",
+      "properties": {
+        "Node name for S&R": "Seed With Text"
+      },
+      "widgets_values": [
+        116593361975805,
+        "randomize",
+        "COMFYUI",
+        "_"
+      ],
+      "color": "#222d4f",
+      "bgcolor": "#364163"
+    },
+    {
+      "id": 24,
+      "type": "Image Save",
+      "pos": [
+        3265.2858944720783,
+        -1090.2109004156414
+      ],
+      "size": {
+        "0": 230,
+        "1": 370
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 64,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3053
+        },
+        {
+          "name": "filename_prefix",
+          "type": "STRING",
+          "link": 103,
+          "widget": {
+            "name": "filename_prefix"
+          }
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Save"
+      },
+      "widgets_values": [
+        "builds/[time(%Y-%m-%d)]",
+        "ComfyUI",
+        "_",
+        4,
+        "false",
+        "png",
+        100,
+        "false",
+        "false",
+        "true",
+        "true",
+        "true",
+        "false"
+      ],
+      "color": "#384f22",
+      "bgcolor": "#4c6336"
+    },
+    {
+      "id": 228,
+      "type": "Load Image Batch",
+      "pos": [
+        -1960,
+        -2250
+      ],
+      "size": {
+        "0": 315,
+        "1": 222
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "filename_text",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Load Image Batch"
+      },
+      "widgets_values": [
+        "incremental_image",
+        0,
+        "Batch 001",
+        "H:\\Programme\\ComfyUI\\ComfyUI\\output\\Arbeitsauftraege\\aktuell",
+        "*",
+        "false",
+        "true"
+      ],
+      "color": "#4f2222",
+      "bgcolor": "#633636"
+    },
+    {
+      "id": 201,
+      "type": "LoadImage",
+      "pos": [
+        -2170,
+        -1950
+      ],
+      "size": {
+        "0": 620,
+        "1": 700
+      },
+      "flags": {},
+      "order": 18,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            7078
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "358194072_818275326600778_6017138566456280224_n.jpg",
+        "image"
+      ],
+      "color": "#4f2e22",
+      "bgcolor": "#634236"
+    },
+    {
+      "id": 205,
+      "type": "BLIP Analyze Image",
+      "pos": [
+        -1150,
+        -1912
+      ],
+      "size": {
+        "0": 210,
+        "1": 130
+      },
+      "flags": {},
+      "order": 34,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 5119
+        },
+        {
+          "name": "blip_model",
+          "type": "BLIP_MODEL",
+          "link": 5120
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            5125
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BLIP Analyze Image"
+      },
+      "widgets_values": [
+        "caption",
+        "What does the background consist of?"
+      ],
+      "color": "#4f3222",
+      "bgcolor": "#634636"
+    },
+    {
+      "id": 214,
+      "type": "Concat Text _O",
+      "pos": [
+        -1100,
+        -1660
+      ],
+      "size": {
+        "0": 340,
+        "1": 150
+      },
+      "flags": {},
+      "order": 40,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 5424,
+          "widget": {
+            "name": "text1"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            5425
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Concat Text _O"
+      },
+      "widgets_values": [
+        "",
+        "raw photo, realistic, , (samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)), film grain, ((cute smiling)), ((small lips)), ",
+        ","
+      ],
+      "color": "#4f4622",
+      "bgcolor": "#635a36"
+    },
+    {
+      "id": 15,
+      "type": "ttN pipeLoader",
+      "pos": [
+        123,
+        -1083
+      ],
+      "size": {
+        "0": 400,
+        "1": 700
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 51,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model_override",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "clip_override",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "optional_lora_stack",
+          "type": "LORA_STACK",
+          "link": null
+        },
+        {
+          "name": "empty_latent_width",
+          "type": "INT",
+          "link": 4128,
+          "widget": {
+            "name": "empty_latent_width"
+          }
+        },
+        {
+          "name": "empty_latent_height",
+          "type": "INT",
+          "link": 4127,
+          "widget": {
+            "name": "empty_latent_height"
+          }
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "link": 4126,
+          "widget": {
+            "name": "batch_size"
+          }
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 3811,
+          "widget": {
+            "name": "positive"
+          },
+          "slot_index": 6
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "link": 4072,
+          "widget": {
+            "name": "negative"
+          },
+          "slot_index": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": [
+            6870
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            9
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            5286
+          ],
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN pipeLoader",
+        "ttNnodeVersion": "1.1.2"
+      },
+      "widgets_values": [
+        "revAnimated_v122EOL.safetensors",
+        "Default",
+        "Baked VAE",
+        -3,
+        "LCM_LoRA_Weights_SD15.safetensors",
+        1,
+        1,
+        "None",
+        1,
+        1,
+        "None",
+        1,
+        1,
+        "Positive",
+        "length+mean",
+        "comfy",
+        "",
+        "none",
+        "comfy",
+        512,
+        512,
+        1,
+        479570733,
+        "fixed"
+      ],
+      "color": "#344f22",
+      "bgcolor": "#486336"
+    },
+    {
+      "id": 222,
+      "type": "ttN hiresfixScale",
+      "pos": [
+        1826,
+        -795
+      ],
+      "size": {
+        "0": 320,
+        "1": 340
+      },
+      "flags": {},
+      "order": 58,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 6902
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 6903
+        }
+      ],
+      "outputs": [
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            6904
+          ],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN hiresfixScale",
+        "ttNnodeVersion": "1.0.3"
+      },
+      "widgets_values": [
+        "4xUltrasharp_4xUltrasharpV10.pt",
+        true,
+        "lanczos",
+        "to longer side - maintain aspect",
+        50,
+        1024,
+        1024,
+        1440,
+        "center",
+        "Hide",
+        "ComfyUI",
+        true
+      ],
+      "color": "#22394f",
+      "bgcolor": "#364d63"
+    },
+    {
+      "id": 223,
+      "type": "ttN pipeKSampler",
+      "pos": [
+        2430,
+        -1070
+      ],
+      "size": {
+        "0": 330,
+        "1": 580
+      },
+      "flags": {},
+      "order": 61,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "link": 6917
+        },
+        {
+          "name": "optional_model",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "optional_positive",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_latent",
+          "type": "LATENT",
+          "link": 6918
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "optional_clip",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "xyPlot",
+          "type": "XYPLOT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            6919
+          ],
+          "shape": 3,
+          "slot_index": 7
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN pipeKSampler",
+        "ttNnodeVersion": "1.0.5"
+      },
+      "widgets_values": [
+        "more_details.safetensors",
+        0.9400000000000001,
+        1,
+        "None",
+        2,
+        "disabled",
+        "Sample",
+        3,
+        1.5,
+        "lcm",
+        "sgm_uniform",
+        0.12,
+        "Hide",
+        "ComfyUI",
+        134388991203406,
+        "randomize"
+      ],
+      "color": "#224f28",
+      "bgcolor": "#36633c"
+    },
+    {
+      "id": 85,
+      "type": "Fan_Style",
+      "pos": [
+        -1158.8074449078003,
+        -1130.8208919004744
+      ],
+      "size": {
+        "0": 340,
+        "1": 322
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 19,
+      "mode": 4,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            7150
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Fan Style",
+      "properties": {
+        "nestedData": {
+          "nestedNodes": [
+            {
+              "id": 67,
+              "type": "Fans Styler",
+              "pos": [
+                -1338.8074449078003,
+                -1120.8208919004744
+              ],
+              "size": {
+                "0": 315,
+                "1": 478
+              },
+              "flags": {},
+              "order": 19,
+              "mode": 0,
+              "outputs": [
+                {
+                  "name": "STYLE 1",
+                  "type": "STRING",
+                  "links": [
+                    7139
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                },
+                {
+                  "name": "STYLE 2",
+                  "type": "STRING",
+                  "links": [
+                    7140
+                  ],
+                  "shape": 3,
+                  "slot_index": 1
+                },
+                {
+                  "name": "STYLE 3",
+                  "type": "STRING",
+                  "links": [
+                    7141
+                  ],
+                  "shape": 3,
+                  "slot_index": 2
+                },
+                {
+                  "name": "STYLE 4",
+                  "type": "STRING",
+                  "links": [
+                    7142
+                  ],
+                  "shape": 3,
+                  "slot_index": 3
+                },
+                {
+                  "name": "STYLE 5",
+                  "type": "STRING",
+                  "links": [
+                    7143
+                  ],
+                  "shape": 3,
+                  "slot_index": 4
+                },
+                {
+                  "name": "STYLE 6",
+                  "type": "STRING",
+                  "links": [
+                    7144
+                  ],
+                  "shape": 3,
+                  "slot_index": 5
+                },
+                {
+                  "name": "STYLE 7",
+                  "type": "STRING",
+                  "links": [
+                    7145
+                  ],
+                  "shape": 3,
+                  "slot_index": 6
+                },
+                {
+                  "name": "STYLE 8",
+                  "type": "STRING",
+                  "links": [
+                    7146
+                  ],
+                  "shape": 3,
+                  "slot_index": 7
+                },
+                {
+                  "name": "STYLE 9",
+                  "type": "STRING",
+                  "links": [
+                    7147
+                  ],
+                  "shape": 3,
+                  "slot_index": 8
+                },
+                {
+                  "name": "STYLE 10",
+                  "type": "STRING",
+                  "links": [
+                    7148
+                  ],
+                  "shape": 3,
+                  "slot_index": 9
+                }
+              ],
+              "properties": {
+                "Node name for S&R": "Fans Styler"
+              },
+              "widgets_values": [
+                "Yes",
+                "ï»¿Shot Type",
+                "ï»¿Camera Option",
+                "ï»¿Film",
+                "ï»¿Lighting",
+                "ï»¿Photographer",
+                "ï»¿Color",
+                "ï»¿Theme",
+                "ï»¿Emotion",
+                "None",
+                "None"
+              ],
+              "color": "#414f22",
+              "bgcolor": "#556336",
+              "serializedWidgets": [
+                {
+                  "type": "combo",
+                  "name": "with_comma_condition",
+                  "value": "Yes",
+                  "options": {
+                    "values": [
+                      "Yes",
+                      "No"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style1",
+                  "value": "ï»¿Shot Type",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿Shot Type",
+                      "------",
+                      "Bird's Eye View Shot",
+                      "Candid Shot",
+                      "Closeup Shot",
+                      "Drone Shot",
+                      "Dutch Angle Shot",
+                      "Establishing Shot",
+                      "Extreme Closeup Shot",
+                      "Extreme Long Shot",
+                      "Eye Level Shot",
+                      "Full Shot",
+                      "Ground-level view",
+                      "High Angle Shot",
+                      "Long Shot (Wide Shot)",
+                      "Low Angle Shot",
+                      "Master Shot",
+                      "Medium Shot",
+                      "Off-Center View",
+                      "Over-the-Shoulder Shot",
+                      "Overhead Shot",
+                      "Point of View Shot",
+                      "Rule of Thirds Shot",
+                      "Shot from Behind",
+                      "Side View",
+                      "Silhouette Shot",
+                      "Two-Shot",
+                      "Underwater Shot",
+                      "Worm's-eye view"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style2",
+                  "value": "ï»¿Camera Option",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿Camera Option",
+                      "------",
+                      "Ambiance-Adventure/Action",
+                      "Ambiance-Bright and vibrant",
+                      "Ambiance-Dark and moody",
+                      "Ambiance-Documentary",
+                      "Ambiance-Fantasy",
+                      "Ambiance-Historical",
+                      "Ambiance-Historical",
+                      "Ambiance-Horror",
+                      "Ambiance-Mystical",
+                      "Ambiance-Romantic",
+                      "Ambiance-Rustic",
+                      "Angle-Aerial Shot, Birdâ€™s-Eye View",
+                      "Angle-Close-up Shot",
+                      "Angle-Extreme Close-Up Shot",
+                      "Angle-Extreme High-Angle Shot",
+                      "Angle-Extreme Low-Angle Shot",
+                      "Angle-Eye-Level Shot",
+                      "Angle-Full Shot",
+                      "Angle-GoPro-Style",
+                      "Angle-Ground-Level Shot",
+                      "Angle-High-Angle Shot",
+                      "Angle-Low-Angle Shot",
+                      "Angle-Medium Shot",
+                      "Angle-Shot from Behind",
+                      "Angle-Side-Angle",
+                      "Angle-Underwater Close-Up Shot",
+                      "Angle-Underwater Shot",
+                      "Angle-Webcam-Style Shot",
+                      "General-Action",
+                      "General-Aerial Shots",
+                      "General-Cinematic",
+                      "General-Cinematic",
+                      "General-Cinematic",
+                      "General-Cinematic",
+                      "General-Cinematic",
+                      "General-Event",
+                      "General-Fashion",
+                      "General-General",
+                      "General-Landscape",
+                      "General-Landscape",
+                      "General-Landscape",
+                      "General-Nostalgic Style",
+                      "General-Portrait",
+                      "General-Portraiture",
+                      "General-Product",
+                      "General-Sports",
+                      "General-Sports",
+                      "General-Street",
+                      "General-Vintage Film",
+                      "General-Wildlife",
+                      "General-Wildlife",
+                      "Lighting-Foggy",
+                      "Lighting-Hazy",
+                      "Lighting-Overcast",
+                      "Lighting-Partly Cloudy",
+                      "Lighting-Rainy",
+                      "Lighting-Snowy",
+                      "Lighting-Sunny",
+                      "Time of the Day-Afternoon",
+                      "Time of the Day-Golden Hour",
+                      "Time of the Day-Morning",
+                      "Time of the Day-Night",
+                      "Time of the Day-Sunrise",
+                      "Time of the Day-Sunset",
+                      "Time of the Day-Twilight"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style3",
+                  "value": "ï»¿Film",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿Film",
+                      "------",
+                      "300",
+                      "2001: A Space Odyssey",
+                      "2010: The Year We Make Contact",
+                      "8Â½",
+                      "A Nightmare on Elm Street",
+                      "Alien",
+                      "Aliens",
+                      "All About My Mother",
+                      "All That Jazz",
+                      "An American in Paris",
+                      "Annie Hall",
+                      "Antichrist",
+                      "Arrival",
+                      "Avatar",
+                      "Babel",
+                      "Back to the Future",
+                      "Bad Boys",
+                      "Beetlejuice",
+                      "Birdman",
+                      "Black Swan",
+                      "Blade Runner",
+                      "Blade Runner 2049",
+                      "Blazing Saddles",
+                      "Blue Velvet",
+                      "Blue Velvet",
+                      "Braveheart",
+                      "Brokeback Mountain",
+                      "Cabaret",
+                      "Citizen Kane",
+                      "City Lights",
+                      "Collateral",
+                      "Cube",
+                      "Day for Night",
+                      "Desperado",
+                      "Doctor Strange",
+                      "Dune",
+                      "E.T.",
+                      "Edward Scissorhands",
+                      "Fight Club",
+                      "Forrest Gump",
+                      "Gone Girl",
+                      "Goodfellas",
+                      "Halloween",
+                      "Hard Boiled",
+                      "Heat",
+                      "Inception",
+                      "Indiana Jones",
+                      "Interstellar",
+                      "Iron Man",
+                      "Kill Bill",
+                      "La Dolce Vita",
+                      "Lady Bird",
+                      "Life of Pi",
+                      "Little Women",
+                      "Lost in Translation",
+                      "Manhattan",
+                      "Melancholia",
+                      "Mission: Impossible II",
+                      "Moulin Rouge",
+                      "Mulholland Drive",
+                      "Mulholland Drive",
+                      "Night of the Living Dead",
+                      "Nomadland",
+                      "Oblivion",
+                      "Only the Brave",
+                      "Pan's Labyrinth",
+                      "Princess Mononoke",
+                      "Psycho",
+                      "Pulp Fiction",
+                      "Pulp Fiction",
+                      "Rashomon",
+                      "Ready Player One",
+                      "Requiem for a Dream",
+                      "Scarface",
+                      "Schindler's List",
+                      "Scream",
+                      "Se7en",
+                      "Seven Samurai",
+                      "Sin City",
+                      "Singin' in the Rain",
+                      "Spider-Man",
+                      "Splice",
+                      "Split",
+                      "Stagecoach",
+                      "Star Wars",
+                      "Talk to Her",
+                      "Terminator",
+                      "The 400 Blows",
+                      "The Birds",
+                      "The Departed",
+                      "The Godfather",
+                      "The Gold Rush",
+                      "The Good, the Bad and the Ugly",
+                      "The Great Gatsby",
+                      "The Hobbit",
+                      "The Hurt Locker",
+                      "The Lion King",
+                      "The Lord of the Rings",
+                      "The Mandalorian",
+                      "The Outlaw Josey Wales",
+                      "The Revenant",
+                      "The Rider",
+                      "The Searchers",
+                      "The Sixth Sense",
+                      "The Thing",
+                      "The Untouchables",
+                      "Timecop",
+                      "Titanic",
+                      "Titanic",
+                      "Touch of Evil",
+                      "Transformers",
+                      "TRON: Legacy",
+                      "Unforgiven",
+                      "Watchmen",
+                      "Wonder Woman",
+                      "Young Frankenstein",
+                      "Zero Dark Thirty"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style4",
+                  "value": "ï»¿Lighting",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿Lighting",
+                      "------",
+                      "Foggy",
+                      "Hazy",
+                      "Overcast",
+                      "Partly Cloudy",
+                      "Rainy",
+                      "Snowy",
+                      "Sunny",
+                      "Afternoon",
+                      "Golden Hour",
+                      "Morning",
+                      "Night",
+                      "Sunrise",
+                      "Sunset",
+                      "Twilight"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style5",
+                  "value": "ï»¿Photographer",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿Photographer",
+                      "------",
+                      "---- Portrait Photography",
+                      "Richard Avedon",
+                      "Annie Leibovitz",
+                      "Yousuf Karsh",
+                      "Platon Antoniou",
+                      "---- Street Photography",
+                      "Henri Cartier-Bresson",
+                      "Garry Winogrand",
+                      "Vivian Maier",
+                      "Bruce Gilden",
+                      "---- Landscape Photography",
+                      "Ansel Adams",
+                      "Galen Rowell",
+                      "SebastiÃ£o Salgado",
+                      "Peter Lik",
+                      "---- Wildlife Photography",
+                      "Frans Lanting",
+                      "Art Wolfe",
+                      "Nick Brandt",
+                      "Joel Sartore",
+                      "---- Fashion Photography",
+                      "Irving Penn",
+                      "Richard Avedon",
+                      "Helmut Newton",
+                      "Mario Testino",
+                      "---- Documentary Photography",
+                      "Dorothea Lange",
+                      "Walker Evans",
+                      "Robert Capa",
+                      "Steve McCurry",
+                      "---- Architecture Photography",
+                      "Julius Shulman",
+                      "Ezra Stoller",
+                      "Iwan Baan",
+                      "---- Still Life Photography",
+                      "Edward Weston",
+                      "Paul Strand",
+                      "Karl Blossfeldt",
+                      "Laura Letinsky",
+                      "---- Black and White Photography",
+                      "Ansel Adams",
+                      "Dorothea Lange",
+                      "SebastiÃ£o Salgado",
+                      "Sally Mann",
+                      "---- Fine Art Photography",
+                      "Cindy Sherman",
+                      "Jeff Wall",
+                      "Andreas Gursky",
+                      "Hiroshi Sugimoto",
+                      "---- Sports Photography",
+                      "Neil Leifer",
+                      "Walter Iooss Jr.",
+                      "Annie Leibovitz",
+                      "Elsa Garrison",
+                      "---- Travel Photography",
+                      "Steve McCurry",
+                      "David Alan Harvey",
+                      "Michael Kenna",
+                      "Jimmy Nelson",
+                      "---- Macro Photography",
+                      "Harold Davis",
+                      "Thomas Shahan",
+                      "Levon Biss",
+                      "Robert Thompson",
+                      "---- Underwater Photography",
+                      "David Doubilet",
+                      "Ernst Haeckel",
+                      "Brian Skerry",
+                      "Anuar Patjane Floriuk",
+                      "---- Concert Photography",
+                      "Jim Marshall",
+                      "Lynn Goldsmith",
+                      "Danny Clinch",
+                      "Anton Corbijn",
+                      "---- Nude Photography",
+                      "Edward Weston",
+                      "Helmut Newton",
+                      "Robert Mapplethorpe",
+                      "Spencer Tunick",
+                      "---- Abstract Photography",
+                      "Man Ray",
+                      "Laszlo Moholy-Nagy",
+                      "Aaron Siskind",
+                      "Wassily Kandinsky",
+                      "---- Photojournalism",
+                      "Robert Capa",
+                      "W. Eugene Smith",
+                      "James Nachtwey",
+                      "Don McCullin",
+                      "---- Mobile Photography",
+                      "Dan Rubin",
+                      "Richard Koci Hernandez",
+                      "Murad Osmann",
+                      "Misho Baranovic",
+                      "---- Astrophotography",
+                      "Adam Block",
+                      "Jason Weingart",
+                      "Brad Goldpaint",
+                      "---- Food Photography",
+                      "Donna Crous",
+                      "Bea Lubas",
+                      "David Loftus",
+                      "---- Drone Photography",
+                      "Dirk Dallas",
+                      "Gabriel Scanu",
+                      "Maksim Tarasov",
+                      "---- Pet Photography",
+                      "Carli Davidson",
+                      "Elke Vogelsang",
+                      "Seth Casteel"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style6",
+                  "value": "ï»¿Color",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿Color",
+                      "------",
+                      "Analogous-Colors",
+                      "Aqua",
+                      "Azure",
+                      "Beige",
+                      "Bichromatic",
+                      "Black and White",
+                      "Blush",
+                      "Bright Colors",
+                      "Chartreuse",
+                      "Color / Colorized",
+                      "Colorful",
+                      "Cool Color Palette",
+                      "Dark Colors",
+                      "Darkened",
+                      "Desaturated",
+                      "Dingy Colors",
+                      "Faded / Faded Colors",
+                      "Gradient",
+                      "Heptachromatic",
+                      "Hexachromatic",
+                      "Hue / Tones",
+                      "Inverted Colors",
+                      "Light Colors",
+                      "Monochromatic",
+                      "Monochrome",
+                      "Multicolored",
+                      "Neutral",
+                      "Octachromatic",
+                      "Olive-Green",
+                      "Pentachromatic",
+                      "Polychromatic",
+                      "Pure / Purity",
+                      "Rainbow",
+                      "Scarlet",
+                      "Sepia",
+                      "Spectral Color",
+                      "Tan",
+                      "Tetrachromatic",
+                      "Tetradic-Colors",
+                      "Triadic-Colors",
+                      "Trichromatic",
+                      "Turquoise",
+                      "Vibrance / Vivid",
+                      "Warm Color Palette"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style7",
+                  "value": "ï»¿Theme",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿Theme",
+                      "------",
+                      "Hyper Real",
+                      "Hyperrealistic",
+                      "Magic Realism",
+                      "Fantastic Realism",
+                      "Contemporary Realism",
+                      "New Realism",
+                      "Surreal",
+                      "Surrealism",
+                      "Ethereal",
+                      "Ethereality or Lucid",
+                      "Fiction",
+                      "Science Fiction",
+                      "Imagined",
+                      "Imaginative",
+                      "Imagination",
+                      "Dreamlike",
+                      "Dreamy",
+                      "Dreampunk",
+                      "Dreamcore or Weirdcore",
+                      "Fever-Dream",
+                      "Otherworldly",
+                      "Unworldly",
+                      "Another Realm",
+                      "Abstract",
+                      "Abstraction",
+                      "Fantasy",
+                      "Ethereal Fantasy",
+                      "Dark Fantasy",
+                      "Illusion",
+                      "Impossible",
+                      "Exaggerated",
+                      "Exaggeration",
+                      "Visual Exaggeration",
+                      "Immaterial",
+                      "Intangible"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style8",
+                  "value": "ï»¿Emotion",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿Emotion",
+                      "------",
+                      "Anger",
+                      "Anticipation",
+                      "Despair",
+                      "Disgust",
+                      "Fear",
+                      "Hope",
+                      "Joy",
+                      "Love",
+                      "Nostalgia",
+                      "Sadness",
+                      "Surprise",
+                      "Suspense"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style9",
+                  "value": "None",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿Material",
+                      "------",
+                      "Physical Properties - Blobby",
+                      "Physical Properties - Blobs",
+                      "Physical Properties - Cracks",
+                      "Physical Properties - Cracked",
+                      "Physical Properties - Corroded",
+                      "Physical Properties - Dirty",
+                      "Physical Properties - With Imperfections",
+                      "Physical Properties - Carbonated",
+                      "Physical Properties - Effervescent",
+                      "Physical Properties - Icy",
+                      "Physical Properties - Charred",
+                      "Physical Properties - Corrugated",
+                      "Physical Properties - Perforated",
+                      "Physical Properties - Hydrophobic",
+                      "Hardness Phases - Soft",
+                      "Hardness Phases - Hard",
+                      "Hardness Phases - Soft Body",
+                      "Hardness Phases - Squishy",
+                      "Hardness Phases - Solid",
+                      "Hardness Phases - Melting",
+                      "Hardness Phases - Freezing",
+                      "Hardness Phases - Vaporization",
+                      "Hardness Phases - Condensation",
+                      "Reflections Refractions - Rough",
+                      "Reflections Refractions - Matte",
+                      "Reflections Refractions - Glossy",
+                      "Reflections Refractions - Shiny",
+                      "Reflections Refractions - Polished",
+                      "Reflections Refractions - Reflection",
+                      "Reflections Refractions - Reflective",
+                      "Reflections Refractions - Retroreflective",
+                      "Reflections Refractions - Refraction",
+                      "Reflections Refractions - Refractive",
+                      "Reflections Refractions - Caustics",
+                      "Reflections Refractions - Glare",
+                      "Reflections Refractions - Specular Highlights",
+                      "Reflections Refractions - Shimmer",
+                      "Reflections Refractions - Shimmering",
+                      "Reflections Refractions - Glimmering",
+                      "Optics Light Manipulation - Transparent",
+                      "Optics Light Manipulation - Translucent",
+                      "Optics Light Manipulation - Opaque",
+                      "Optics Light Manipulation - Scattering",
+                      "Optics Light Manipulation - Subsurface-Scattering",
+                      "Optics Light Manipulation - Ambient Occlusion",
+                      "Optics Light Manipulation - Opalescent",
+                      "Optics Light Manipulation - Polarized or Polarization",
+                      "Optics Light Manipulation - Solarized or Solarization",
+                      "Optics Light Manipulation - Iridescent",
+                      "Optics Light Manipulation - Dispersion",
+                      "Optics Light Manipulation - Chromatic",
+                      "Optics Light Manipulation - Prismatic",
+                      "Optics Light Manipulation - Sparkly or Glitter",
+                      "Chromism Luminescence - Glowing",
+                      "Chromism Luminescence - Glowing Neon",
+                      "Chromism Luminescence - Glow-In-The-Dark",
+                      "Chromism Luminescence - Radiant",
+                      "Chromism Luminescence - Cherenkov Radiation",
+                      "Chromism Luminescence - Luminescence",
+                      "Chromism Luminescence - Bioluminescence",
+                      "Chromism Luminescence - Chromism",
+                      "Chromism Luminescence - Piezochromism",
+                      "Chromism Luminescence - Tribochromism",
+                      "Chromism Luminescence - Metallochromism",
+                      "Chromism Luminescence - Goniochromism",
+                      "Chromism Luminescence - Hydrochromism"
+                    ]
+                  }
+                },
+                {
+                  "type": "combo",
+                  "name": "style10",
+                  "value": "None",
+                  "options": {
+                    "values": [
+                      "None",
+                      "ï»¿cat3",
+                      "red",
+                      "gren",
+                      "blue"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": 69,
+              "type": "Fans Text Concatenate",
+              "pos": [
+                -978.8074449078003,
+                -1140.8208919004744
+              ],
+              "size": [
+                315,
+                322
+              ],
+              "flags": {},
+              "order": 31,
+              "mode": 0,
+              "inputs": [
+                {
+                  "name": "prompt",
+                  "type": "STRING",
+                  "link": null,
+                  "widget": {
+                    "name": "prompt"
+                  }
+                },
+                {
+                  "name": "text_a",
+                  "type": "STRING",
+                  "link": 7139,
+                  "widget": {
+                    "name": "text_a"
+                  }
+                },
+                {
+                  "name": "text_b",
+                  "type": "STRING",
+                  "link": 7140,
+                  "widget": {
+                    "name": "text_b"
+                  }
+                },
+                {
+                  "name": "text_c",
+                  "type": "STRING",
+                  "link": 7141,
+                  "widget": {
+                    "name": "text_c"
+                  }
+                },
+                {
+                  "name": "text_d",
+                  "type": "STRING",
+                  "link": 7142,
+                  "widget": {
+                    "name": "text_d"
+                  }
+                },
+                {
+                  "name": "text_e",
+                  "type": "STRING",
+                  "link": 7143,
+                  "widget": {
+                    "name": "text_e"
+                  }
+                },
+                {
+                  "name": "text_f",
+                  "type": "STRING",
+                  "link": 7144,
+                  "widget": {
+                    "name": "text_f"
+                  }
+                },
+                {
+                  "name": "text_g",
+                  "type": "STRING",
+                  "link": 7145,
+                  "widget": {
+                    "name": "text_g"
+                  }
+                },
+                {
+                  "name": "text_h",
+                  "type": "STRING",
+                  "link": 7146,
+                  "widget": {
+                    "name": "text_h"
+                  }
+                },
+                {
+                  "name": "text_i",
+                  "type": "STRING",
+                  "link": 7147,
+                  "widget": {
+                    "name": "text_i"
+                  }
+                },
+                {
+                  "name": "text_j",
+                  "type": "STRING",
+                  "link": 7148,
+                  "widget": {
+                    "name": "text_j"
+                  }
+                }
+              ],
+              "outputs": [
+                {
+                  "name": "STRING",
+                  "type": "STRING",
+                  "links": [
+                    7149
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                }
+              ],
+              "properties": {
+                "Node name for S&R": "Fans Text Concatenate"
+              },
+              "widgets_values": [
+                "false",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              "color": "#454f22",
+              "bgcolor": "#596336",
+              "serializedWidgets": [
+                {
+                  "type": "combo",
+                  "name": "linebreak_addition",
+                  "value": "false",
+                  "options": {
+                    "values": [
+                      "false",
+                      "true"
+                    ]
+                  },
+                  "last_y": null
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "prompt",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "origType": "converted-widget",
+                  "last_y": null
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_a",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_b",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_c",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_d",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_e",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_f",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_g",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_h",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_i",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                },
+                {
+                  "type": "converted-widget",
+                  "name": "text_j",
+                  "value": "",
+                  "options": {
+                    "forceInput": true
+                  },
+                  "last_y": null,
+                  "origType": "converted-widget"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "widgets_values": [
+        "Yes",
+        "ï»¿Shot Type",
+        "ï»¿Camera Option",
+        "ï»¿Film",
+        "ï»¿Lighting",
+        "ï»¿Photographer",
+        "ï»¿Color",
+        "ï»¿Theme",
+        "ï»¿Emotion",
+        "None",
+        "None",
+        "false",
+        ""
+      ],
+      "color": "#444f22",
+      "bgcolor": "#586336"
+    }
+  ],
+  "links": [
+    [
+      9,
+      15,
+      1,
+      16,
+      0,
+      "MODEL"
+    ],
+    [
+      10,
+      16,
+      0,
+      17,
+      0,
+      "MODEL"
+    ],
+    [
+      103,
+      25,
+      2,
+      24,
+      1,
+      "STRING"
+    ],
+    [
+      120,
+      25,
+      2,
+      29,
+      1,
+      "STRING"
+    ],
+    [
+      291,
+      25,
+      1,
+      39,
+      0,
+      "STRING"
+    ],
+    [
+      292,
+      36,
+      0,
+      39,
+      1,
+      "STRING"
+    ],
+    [
+      293,
+      39,
+      0,
+      29,
+      0,
+      "STRING"
+    ],
+    [
+      570,
+      54,
+      0,
+      55,
+      0,
+      "IMAGE"
+    ],
+    [
+      592,
+      62,
+      0,
+      39,
+      2,
+      "STRING"
+    ],
+    [
+      595,
+      63,
+      0,
+      39,
+      3,
+      "STRING"
+    ],
+    [
+      3053,
+      54,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ],
+    [
+      3480,
+      118,
+      0,
+      21,
+      0,
+      "IMAGE"
+    ],
+    [
+      3617,
+      156,
+      0,
+      158,
+      0,
+      "*"
+    ],
+    [
+      3795,
+      3,
+      0,
+      166,
+      0,
+      "*"
+    ],
+    [
+      3797,
+      77,
+      0,
+      157,
+      0,
+      "*"
+    ],
+    [
+      3806,
+      9,
+      1,
+      169,
+      0,
+      "*"
+    ],
+    [
+      3809,
+      9,
+      4,
+      170,
+      0,
+      "*"
+    ],
+    [
+      3811,
+      171,
+      0,
+      15,
+      6,
+      "STRING"
+    ],
+    [
+      3819,
+      9,
+      0,
+      168,
+      0,
+      "*"
+    ],
+    [
+      3856,
+      180,
+      0,
+      62,
+      0,
+      "*"
+    ],
+    [
+      3971,
+      4,
+      0,
+      159,
+      0,
+      "*"
+    ],
+    [
+      4072,
+      172,
+      0,
+      15,
+      7,
+      "STRING"
+    ],
+    [
+      4098,
+      188,
+      0,
+      36,
+      0,
+      "*"
+    ],
+    [
+      4100,
+      180,
+      0,
+      171,
+      0,
+      "*"
+    ],
+    [
+      4126,
+      170,
+      0,
+      15,
+      5,
+      "INT"
+    ],
+    [
+      4127,
+      169,
+      0,
+      15,
+      4,
+      "INT"
+    ],
+    [
+      4128,
+      168,
+      0,
+      15,
+      3,
+      "INT"
+    ],
+    [
+      4679,
+      65,
+      0,
+      156,
+      0,
+      "*"
+    ],
+    [
+      4681,
+      152,
+      0,
+      165,
+      0,
+      "*"
+    ],
+    [
+      4683,
+      58,
+      0,
+      190,
+      0,
+      "STRING"
+    ],
+    [
+      4684,
+      190,
+      0,
+      188,
+      0,
+      "STRING"
+    ],
+    [
+      4687,
+      192,
+      0,
+      193,
+      0,
+      "STRING"
+    ],
+    [
+      4689,
+      196,
+      0,
+      180,
+      0,
+      "STRING"
+    ],
+    [
+      4690,
+      194,
+      0,
+      196,
+      0,
+      "*"
+    ],
+    [
+      4692,
+      197,
+      0,
+      190,
+      1,
+      "STRING"
+    ],
+    [
+      4693,
+      156,
+      0,
+      198,
+      0,
+      "*"
+    ],
+    [
+      4698,
+      193,
+      0,
+      194,
+      0,
+      "*"
+    ],
+    [
+      4699,
+      188,
+      0,
+      172,
+      0,
+      "*"
+    ],
+    [
+      4701,
+      186,
+      0,
+      192,
+      0,
+      "STRING"
+    ],
+    [
+      4918,
+      166,
+      0,
+      186,
+      7,
+      "STRING"
+    ],
+    [
+      4919,
+      165,
+      0,
+      186,
+      6,
+      "STRING"
+    ],
+    [
+      4921,
+      157,
+      0,
+      186,
+      5,
+      "STRING"
+    ],
+    [
+      4922,
+      159,
+      0,
+      186,
+      4,
+      "STRING"
+    ],
+    [
+      4923,
+      158,
+      0,
+      186,
+      3,
+      "STRING"
+    ],
+    [
+      4924,
+      160,
+      0,
+      186,
+      2,
+      "STRING"
+    ],
+    [
+      4925,
+      167,
+      0,
+      186,
+      1,
+      "STRING"
+    ],
+    [
+      5119,
+      202,
+      0,
+      205,
+      0,
+      "IMAGE"
+    ],
+    [
+      5120,
+      204,
+      0,
+      205,
+      1,
+      "BLIP_MODEL"
+    ],
+    [
+      5125,
+      205,
+      0,
+      210,
+      0,
+      "STRING"
+    ],
+    [
+      5128,
+      211,
+      0,
+      186,
+      0,
+      "STRING"
+    ],
+    [
+      5286,
+      15,
+      5,
+      212,
+      1,
+      "VAE"
+    ],
+    [
+      5422,
+      210,
+      0,
+      215,
+      0,
+      "*"
+    ],
+    [
+      5423,
+      215,
+      0,
+      216,
+      0,
+      "*"
+    ],
+    [
+      5424,
+      216,
+      0,
+      214,
+      0,
+      "STRING"
+    ],
+    [
+      5425,
+      214,
+      0,
+      211,
+      0,
+      "*"
+    ],
+    [
+      6171,
+      218,
+      0,
+      186,
+      8,
+      "STRING"
+    ],
+    [
+      6413,
+      202,
+      0,
+      212,
+      0,
+      "IMAGE"
+    ],
+    [
+      6870,
+      15,
+      0,
+      221,
+      0,
+      "PIPE_LINE"
+    ],
+    [
+      6871,
+      17,
+      0,
+      221,
+      1,
+      "MODEL"
+    ],
+    [
+      6872,
+      212,
+      0,
+      221,
+      4,
+      "LATENT"
+    ],
+    [
+      6874,
+      221,
+      5,
+      21,
+      1,
+      "VAE"
+    ],
+    [
+      6876,
+      221,
+      7,
+      19,
+      0,
+      "IMAGE"
+    ],
+    [
+      6902,
+      19,
+      0,
+      222,
+      0,
+      "IMAGE"
+    ],
+    [
+      6903,
+      221,
+      5,
+      222,
+      1,
+      "VAE"
+    ],
+    [
+      6904,
+      222,
+      1,
+      118,
+      0,
+      "IMAGE"
+    ],
+    [
+      6917,
+      221,
+      0,
+      223,
+      0,
+      "PIPE_LINE"
+    ],
+    [
+      6918,
+      21,
+      0,
+      223,
+      4,
+      "LATENT"
+    ],
+    [
+      6919,
+      223,
+      7,
+      54,
+      0,
+      "*"
+    ],
+    [
+      7078,
+      201,
+      0,
+      202,
+      0,
+      "IMAGE"
+    ],
+    [
+      7150,
+      85,
+      0,
+      167,
+      0,
+      "*"
+    ]
+  ],
+  "groups": [
+    {
+      "title": "Load Model",
+      "bounding": [
+        73,
+        -1180,
+        996,
+        1084
+      ],
+      "color": "#8A8",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Create Image",
+      "bounding": [
+        1082,
+        -1176,
+        1788,
+        1083
+      ],
+      "color": "#b58b2a",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Save Image",
+      "bounding": [
+        2883,
+        -1173,
+        913,
+        1074
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Style (SAM)",
+      "bounding": [
+        -1722,
+        -1167,
+        420,
+        284
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Input Eperimental",
+      "bounding": [
+        -1725,
+        -772,
+        420,
+        284
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Input Static",
+      "bounding": [
+        -1729,
+        -117,
+        420,
+        284
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Gen Fan Style",
+      "bounding": [
+        -1189,
+        -1168,
+        360,
+        404
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Gen Bilbox",
+      "bounding": [
+        -2159,
+        -1169,
+        380,
+        624
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Gen One Button",
+      "bounding": [
+        -2160,
+        -523,
+        380,
+        524
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Input Debug",
+      "bounding": [
+        -1730,
+        -424,
+        420,
+        284
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Negative (SAM)",
+      "bounding": [
+        -1080,
+        -63,
+        423,
+        217
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Negative (Static)",
+      "bounding": [
+        -1077,
+        -311,
+        420,
+        234
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Promp Generation",
+      "bounding": [
+        -635,
+        -1179,
+        688,
+        1072
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt Load Image with Blip",
+      "bounding": [
+        -2141,
+        -2013,
+        1453,
+        789
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Main Group Prompt Input",
+      "bounding": [
+        -2153,
+        -2158,
+        1520,
+        3206
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    },
+    {
+      "title": "Prompt FaceGen",
+      "bounding": [
+        -1730,
+        181,
+        420,
+        836
+      ],
+      "color": "#3f789e",
+      "font_size": 24,
+      "locked": false
+    }
+  ],
+  "config": {},
+  "extra": {
+    "groupNodes": {},
+    "info": {
+      "name": "workflow",
+      "author": "",
+      "description": "",
+      "version": "1",
+      "created": "2024-01-16T11:43:40.487Z",
+      "modified": "2024-02-11T17:59:51.995Z",
+      "software": "ComfyUI"
+    }
+  },
+  "version": 0.4
+}
