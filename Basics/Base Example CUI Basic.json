@@ -1,65 +1,7 @@
 {
-  "last_node_id": 18,
-  "last_link_id": 27,
+  "last_node_id": 21,
+  "last_link_id": 37,
   "nodes": [
-    {
-      "id": 14,
-      "type": "Reroute (rgthree)",
-      "pos": {
-        "0": 397,
-        "1": 757,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        40,
-        30
-      ],
-      "flags": {},
-      "order": 4,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 15,
-          "dir": 3,
-          "has_old_label": true,
-          "label": " ",
-          "slot_index": 0
-        }
-      ],
-      "outputs": [
-        {
-          "name": "VAE",
-          "type": "VAE",
-          "links": [
-            16
-          ],
-          "dir": 4,
-          "has_old_label": true,
-          "label": " ",
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "resizable": false,
-        "size": [
-          40,
-          30
-        ],
-        "connections_layout": [
-          "Left",
-          "Right"
-        ]
-      }
-    },
     {
       "id": 5,
       "type": "EmptyLatentImage",
@@ -180,72 +122,6 @@
       ]
     },
     {
-      "id": 9,
-      "type": "SaveImage",
-      "pos": [
-        1437,
-        121
-      ],
-      "size": [
-        371.4091911315918,
-        657.8576965332031
-      ],
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 9
-        }
-      ],
-      "properties": {},
-      "widgets_values": [
-        "ComfyUI"
-      ]
-    },
-    {
-      "id": 8,
-      "type": "VAEDecode",
-      "pos": [
-        1120,
-        740
-      ],
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {},
-      "order": 6,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "samples",
-          "type": "LATENT",
-          "link": 27
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 16
-        }
-      ],
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            9
-          ],
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEDecode"
-      }
-    },
-    {
       "id": 6,
       "type": "CLIPTextEncode",
       "pos": [
@@ -287,13 +163,13 @@
       "id": 18,
       "type": "KSampler",
       "pos": [
-        1002,
-        94
+        1010,
+        100
       ],
-      "size": [
-        315,
-        474
-      ],
+      "size": {
+        "0": 315,
+        "1": 474
+      },
       "flags": {},
       "order": 5,
       "mode": 0,
@@ -324,7 +200,7 @@
           "name": "LATENT",
           "type": "LATENT",
           "links": [
-            27
+            34
           ],
           "shape": 3,
           "slot_index": 0
@@ -334,13 +210,308 @@
         "Node name for S&R": "KSampler"
       },
       "widgets_values": [
-        931818243615167,
+        355723269029632,
         "randomize",
         20,
         8,
         "euler",
         "normal",
         1
+      ]
+    },
+    {
+      "id": 20,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": 1320,
+        "1": 620,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 34,
+          "dir": 1,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            31
+          ],
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Top",
+          "Left"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "type": "VAEDecode",
+      "pos": [
+        1120,
+        730
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "samples",
+          "type": "LATENT",
+          "link": 29
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 16
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            35
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEDecode"
+      }
+    },
+    {
+      "id": 21,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": 1390,
+        "1": 730,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 35,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            37
+          ],
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Top"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": 1020,
+        "1": 610,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        30,
+        40
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 31,
+          "dir": 4,
+          "has_old_label": true,
+          "label": " "
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            29
+          ],
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          30,
+          40
+        ],
+        "connections_layout": [
+          "Right",
+          "Bottom"
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": 380,
+        "1": 740,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "",
+          "type": "*",
+          "link": 15,
+          "dir": 3,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VAE",
+          "type": "VAE",
+          "links": [
+            16
+          ],
+          "dir": 4,
+          "has_old_label": true,
+          "label": " ",
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "type": "SaveImage",
+      "pos": [
+        1450,
+        120
+      ],
+      "size": {
+        "0": 371.4091796875,
+        "1": 657.857666015625
+      },
+      "flags": {},
+      "order": 10,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 37
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "ComfyUI"
       ]
     }
   ],
@@ -360,14 +531,6 @@
       7,
       0,
       "CLIP"
-    ],
-    [
-      9,
-      8,
-      0,
-      9,
-      0,
-      "IMAGE"
     ],
     [
       15,
@@ -418,12 +581,44 @@
       "LATENT"
     ],
     [
-      27,
-      18,
+      29,
+      19,
       0,
       8,
       0,
       "LATENT"
+    ],
+    [
+      31,
+      20,
+      0,
+      19,
+      0,
+      "*"
+    ],
+    [
+      34,
+      18,
+      0,
+      20,
+      0,
+      "*"
+    ],
+    [
+      35,
+      8,
+      0,
+      21,
+      0,
+      "*"
+    ],
+    [
+      37,
+      21,
+      0,
+      9,
+      0,
+      "IMAGE"
     ]
   ],
   "groups": [
@@ -468,11 +663,11 @@
   "extra": {
     "info": {
       "name": "workflow",
-      "author": "",
+      "author": "Zinn",
       "description": "",
       "version": "1",
       "created": "2024-02-20T08:45:50.239Z",
-      "modified": "2024-02-20T08:45:50.239Z",
+      "modified": "2024-02-20T08:59:05.735Z",
       "software": "ComfyUI"
     }
   },
