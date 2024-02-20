@@ -1,6 +1,6 @@
 {
-  "last_node_id": 286,
-  "last_link_id": 12774,
+  "last_node_id": 289,
+  "last_link_id": 13879,
   "nodes": [
     {
       "id": 63,
@@ -38,52 +38,6 @@
       ],
       "color": "#3c224f",
       "bgcolor": "#503663"
-    },
-    {
-      "id": 21,
-      "type": "VAEEncode",
-      "pos": [
-        2018.0394384071208,
-        -949.0745292579472
-      ],
-      "size": {
-        "0": 210,
-        "1": 46
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 79,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "pixels",
-          "type": "IMAGE",
-          "link": 3480,
-          "slot_index": 0
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "link": 12127
-        }
-      ],
-      "outputs": [
-        {
-          "name": "LATENT",
-          "type": "LATENT",
-          "links": [
-            6918
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "VAEEncode"
-      },
-      "color": "#224f41",
-      "bgcolor": "#366355"
     },
     {
       "id": 29,
@@ -147,7 +101,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 83,
+      "order": 84,
       "mode": 0,
       "inputs": [
         {
@@ -222,62 +176,6 @@
       "bgcolor": "#63363e"
     },
     {
-      "id": 65,
-      "type": "BilboXPhotoPrompt",
-      "pos": [
-        -2152.3307157036393,
-        -1095.3388158634084
-      ],
-      "size": {
-        "0": 360,
-        "1": 540
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 2,
-      "mode": 4,
-      "outputs": [
-        {
-          "name": "full_composed_prompt",
-          "type": "STRING",
-          "links": [
-            11588
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "subject_only",
-          "type": "STRING",
-          "links": [],
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "BilboXPhotoPrompt"
-      },
-      "widgets_values": [
-        true,
-        "glamour photography",
-        "",
-        "full body",
-        "",
-        "golden hour",
-        "",
-        "Hasselblad 500CM",
-        "Ilford HP5 Plus",
-        "50mm",
-        "",
-        "Richard Avedon",
-        "glamour photography photo of , full body, golden hour, Hasselblad 500CM, Ilford HP5 Plus, 50mm, in the style of Richard Avedon",
-        "Yes"
-      ],
-      "color": "#404f22",
-      "bgcolor": "#546336"
-    },
-    {
       "id": 167,
       "type": "Reroute (rgthree)",
       "pos": {
@@ -299,13 +197,13 @@
       "flags": {
         "pinned": false
       },
-      "order": 33,
+      "order": 32,
       "mode": 4,
       "inputs": [
         {
           "name": "",
           "type": "*",
-          "link": 12774,
+          "link": 13879,
           "dir": 1,
           "has_old_label": true,
           "label": " ",
@@ -356,7 +254,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -500,7 +398,7 @@
         30
       ],
       "flags": {},
-      "order": 31,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -550,7 +448,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 3,
+      "order": 2,
       "mode": 4,
       "outputs": [
         {
@@ -591,7 +489,7 @@
         "female",
         "lines from songs",
         false,
-        428932888039427,
+        360930479305293,
         "randomize"
       ],
       "color": "#3f224f",
@@ -617,7 +515,7 @@
         30
       ],
       "flags": {},
-      "order": 22,
+      "order": 21,
       "mode": 4,
       "inputs": [
         {
@@ -673,7 +571,7 @@
         30
       ],
       "flags": {},
-      "order": 37,
+      "order": 35,
       "mode": 0,
       "inputs": [
         {
@@ -729,7 +627,7 @@
         30
       ],
       "flags": {},
-      "order": 4,
+      "order": 3,
       "mode": 4,
       "inputs": [
         {
@@ -785,7 +683,7 @@
         30
       ],
       "flags": {},
-      "order": 34,
+      "order": 36,
       "mode": 0,
       "inputs": [
         {
@@ -843,7 +741,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 21,
+      "order": 28,
       "mode": 4,
       "inputs": [
         {
@@ -907,7 +805,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 30,
+      "order": 33,
       "mode": 4,
       "inputs": [
         {
@@ -968,7 +866,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 35,
+      "order": 34,
       "mode": 4,
       "inputs": [
         {
@@ -1033,7 +931,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 25,
+      "order": 31,
       "mode": 2,
       "inputs": [
         {
@@ -1099,7 +997,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 40,
+      "order": 41,
       "mode": 4,
       "inputs": [
         {
@@ -1166,7 +1064,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 23,
+      "order": 22,
       "mode": 4,
       "inputs": [
         {
@@ -1223,7 +1121,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 5,
+      "order": 4,
       "mode": 4,
       "outputs": [
         {
@@ -1247,43 +1145,6 @@
       "shape": 2
     },
     {
-      "id": 4,
-      "type": "Text _O",
-      "pos": [
-        -1682.3307157036384,
-        -685.33881586341
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 6,
-      "mode": 4,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            7250
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Text _O"
-      },
-      "widgets_values": [
-        "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)), "
-      ],
-      "color": "#22314f",
-      "bgcolor": "#364563",
-      "shape": 2
-    },
-    {
       "id": 218,
       "type": "Reroute (rgthree)",
       "pos": {
@@ -1303,7 +1164,7 @@
         30
       ],
       "flags": {},
-      "order": 43,
+      "order": 40,
       "mode": 4,
       "inputs": [
         {
@@ -1369,7 +1230,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 24,
+      "order": 23,
       "mode": 4,
       "inputs": [
         {
@@ -1411,41 +1272,6 @@
       "color": "#4c224f",
       "bgcolor": "#603663",
       "shape": 2
-    },
-    {
-      "id": 197,
-      "type": "Text _O",
-      "pos": [
-        -1177.9678238988304,
-        192.82917811889607
-      ],
-      "size": {
-        "0": 420,
-        "1": 160
-      },
-      "flags": {},
-      "order": 7,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            4692
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "title": "Negative (Static)",
-      "properties": {
-        "Node name for S&R": "Text _O"
-      },
-      "widgets_values": [
-        "(worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1),  multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, sketches, (worst quality, bad quality, child, cropped:1.4),"
-      ],
-      "color": "#4f2247",
-      "bgcolor": "#63365b"
     },
     {
       "id": 255,
@@ -1546,40 +1372,6 @@
       ]
     },
     {
-      "id": 240,
-      "type": "LoadImage2TextModel",
-      "pos": [
-        -1652.239750962339,
-        -2287.68575892767
-      ],
-      "size": {
-        "0": 260,
-        "1": 110
-      },
-      "flags": {},
-      "order": 8,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE2TEXT_MODEL",
-          "type": "IMAGE2TEXT_MODEL",
-          "links": [
-            11358
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage2TextModel"
-      },
-      "widgets_values": [
-        "moondream1",
-        "cuda",
-        false
-      ]
-    },
-    {
       "id": 9,
       "type": "CR Aspect Ratio",
       "pos": [
@@ -1593,7 +1385,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 9,
+      "order": 5,
       "mode": 0,
       "outputs": [
         {
@@ -1750,7 +1542,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 42,
+      "order": 43,
       "mode": 0,
       "inputs": [
         {
@@ -1792,51 +1584,6 @@
       },
       "color": "#22464f",
       "bgcolor": "#365a63"
-    },
-    {
-      "id": 239,
-      "type": "Image2Text",
-      "pos": [
-        -1232.239750962339,
-        -2287.68575892767
-      ],
-      "size": {
-        "0": 210,
-        "1": 140
-      },
-      "flags": {},
-      "order": 44,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model",
-          "type": "IMAGE2TEXT_MODEL",
-          "link": 11358
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "link": 11619
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            11625
-          ],
-          "shape": 6,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Image2Text"
-      },
-      "widgets_values": [
-        "What is this?",
-        ""
-      ]
     },
     {
       "id": 205,
@@ -1897,7 +1644,7 @@
         "1": 60
       },
       "flags": {},
-      "order": 10,
+      "order": 6,
       "mode": 2,
       "outputs": [
         {
@@ -2715,7 +2462,7 @@
         "Positive Prompt",
         "Always",
         "((a woman standing on a bridge wearing a black blazer jacket and a black and white polka skirt)),raw photo, realistic, (samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)), film grain, ((cute smiling)), ((small lips)), , , , , [german:bangladeshi:0.5:0.5] woman 40-years-old, (blunt cut hairstyle:1.25), (disheveled:0.39), (skin details, skin texture:1.09), (skin pores:0.35), (freckles:0.23), (eyes details:1.35), (iris details:1.32)",
-        "((the image features a woman with a shirtless body, posing in front of a wooden wall. she is leaning against the wall, possibly in a studio setting, and appears to be the main focus of the scene. the woman is wearing jeans, which accentuates her bare midriff. the photograph captures a candid moment, showcasing her confidence and beauty.,,)),, , ((samdoesarts), masterpiece, high quality, intricate details),digital art,wide angle,full body shot,((high detailed face)),((high detailed eyes)),((background in style of watercolor)), ((cute smiling)), (((thin lips))), ((large disney eyes)) ( woman 31-years-old:1.5), (natural skin:0.54), (skin details, skin texture:1.01), (eyes details:0.49), (iris details:0.46), (circular iris:0.11), (circular pupil:0.05)"
+        "((the image features a beautiful blonde woman wearing a red dress, standing in front of a large world map. she is positioned in the center of the frame and appears to be smiling for the camera. the woman is surrounded by a blue background, which emphasizes the vibrant colors of her dress and the world map. the map covers a significant portion of the background, showcasing various countries and continents.,,)),, , ((samdoesarts), masterpiece, high quality, intricate details),digital art,wide angle,full body shot,((high detailed face)),((high detailed eyes)),((background in style of watercolor)), ((cute smiling)), (((thin lips))), ((large disney eyes)) ( woman 31-years-old:1.5), (natural skin:1.07), (skin details, skin texture:1.01), (eyes details:0.88), (iris details:0.82), (circular iris:0.11), (circular pupil:0.05)"
       ],
       "color": "#4f223f",
       "bgcolor": "#633653"
@@ -2735,7 +2482,7 @@
         "collapsed": true,
         "pinned": false
       },
-      "order": 36,
+      "order": 37,
       "mode": 0,
       "inputs": [
         {
@@ -2994,7 +2741,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 81,
+      "order": 82,
       "mode": 0,
       "inputs": [
         {
@@ -3037,7 +2784,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 82,
+      "order": 83,
       "mode": 0,
       "inputs": [
         {
@@ -3066,7 +2813,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 11,
+      "order": 7,
       "mode": 0,
       "outputs": [
         {
@@ -3100,7 +2847,7 @@
         "Node name for S&R": "Seed With Text"
       },
       "widgets_values": [
-        1912659208,
+        343010146755640,
         "randomize",
         "COMFYUI",
         "_"
@@ -3211,7 +2958,7 @@
         30
       ],
       "flags": {},
-      "order": 32,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -3246,43 +2993,6 @@
       }
     },
     {
-      "id": 152,
-      "type": "Text _O",
-      "pos": [
-        -1682.3307157036384,
-        -335.3388158634094
-      ],
-      "size": {
-        "0": 400,
-        "1": 200
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 12,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            11603
-          ],
-          "shape": 3,
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "Text _O"
-      },
-      "widgets_values": [
-        "((samdoesarts), masterpiece, high quality, intricate details),digital art,wide angle,full body shot,((high detailed face)),((high detailed eyes)),((background in style of watercolor)), ((cute smiling)), (((thin lips))), ((large disney eyes))"
-      ],
-      "color": "#48224f",
-      "bgcolor": "#5c3663",
-      "shape": 2
-    },
-    {
       "id": 251,
       "type": "LoadImagesFromDir //Inspire",
       "pos": [
@@ -3294,7 +3004,7 @@
         "1": 170
       },
       "flags": {},
-      "order": 13,
+      "order": 8,
       "mode": 0,
       "outputs": [
         {
@@ -3328,68 +3038,6 @@
       ]
     },
     {
-      "id": 211,
-      "type": "Reroute (rgthree)",
-      "pos": {
-        "0": -840,
-        "1": -1290,
-        "2": 0,
-        "3": 0,
-        "4": 0,
-        "5": 0,
-        "6": 0,
-        "7": 0,
-        "8": 0,
-        "9": 0
-      },
-      "size": [
-        40,
-        30
-      ],
-      "flags": {},
-      "order": 54,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "",
-          "type": "*",
-          "link": 12086,
-          "dir": 1,
-          "has_old_label": true,
-          "label": " ",
-          "widget": {
-            "name": "value"
-          }
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            11593
-          ],
-          "dir": 2,
-          "has_old_label": true,
-          "label": " ",
-          "slot_index": 0
-        }
-      ],
-      "properties": {
-        "resizable": false,
-        "size": [
-          40,
-          30
-        ],
-        "connections_layout": [
-          "Top",
-          "Bottom"
-        ]
-      },
-      "color": "#494f22",
-      "bgcolor": "#5d6336"
-    },
-    {
       "id": 189,
       "type": "Fast Groups Bypasser (rgthree)",
       "pos": {
@@ -3411,7 +3059,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 14,
+      "order": 9,
       "mode": 0,
       "inputs": [],
       "outputs": [
@@ -3431,55 +3079,6 @@
       },
       "color": "#4f4a22",
       "bgcolor": "#635e36"
-    },
-    {
-      "id": 237,
-      "type": "GlobalSeed //Inspire",
-      "pos": [
-        80,
-        -1450
-      ],
-      "size": {
-        "0": 315,
-        "1": 130
-      },
-      "flags": {},
-      "order": 15,
-      "mode": 0,
-      "properties": {
-        "Node name for S&R": "GlobalSeed //Inspire"
-      },
-      "widgets_values": [
-        1912659208,
-        true,
-        "randomize",
-        2706887481
-      ]
-    },
-    {
-      "id": 107,
-      "type": "Note",
-      "pos": [
-        -670,
-        -2110
-      ],
-      "size": {
-        "0": 640,
-        "1": 310
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 16,
-      "mode": 0,
-      "properties": {
-        "text": ""
-      },
-      "widgets_values": [
-        "658644618289029\n\nFantasy movies, inpired from Indiana Jones directed by George Lucas,Love,high fashion photography photo, full body, fill lighting, dutch angle, Leica M3, 50mm,anime key visual, masterpiece, Mystical Neptune, Shaolinn Monk, at Blue hour, Regret, Cryptidcore, specular lighting, F/5, highly detailed face,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)), (white skin type), (age  32), from SWEDEN, film grain,(red hair),\n\n CheckPoints \nanimeClesticMAgic  -->  Nice flat drawing style\nAbysOrangeMix_HArd -->  SDA MEdium\nrevanimwted_122    -->  SDA HArd\noekakizuimodel     -->  Nice flat drawing style\nmistoonanime_V20   -->  Nice flat drawing style\nmeinHEntai         -->  Nice flat drawing style\nDreamshaper        -->  Nice Sctches\ncomfyroll          -->  Mix Flat Design\nanythingelse       -->  Mix Flat Design\n\n\nsguniform or strange ddimunifoirm (more denoise)\n "
-      ],
-      "color": "#4f2522",
-      "bgcolor": "#633936"
     },
     {
       "id": 170,
@@ -3503,7 +3102,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 29,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -3563,7 +3162,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 27,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -3623,7 +3222,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 28,
+      "order": 25,
       "mode": 0,
       "inputs": [
         {
@@ -3907,7 +3506,7 @@
           "name": "MODEL",
           "type": "MODEL",
           "links": [
-            6871
+            12813
           ],
           "shape": 3,
           "slot_index": 0
@@ -4047,7 +3646,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 41,
+      "order": 42,
       "mode": 0,
       "inputs": [
         {
@@ -4119,6 +3718,31 @@
       "bgcolor": "#633656"
     },
     {
+      "id": 107,
+      "type": "Note",
+      "pos": [
+        -670,
+        -2110
+      ],
+      "size": {
+        "0": 640,
+        "1": 310
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 10,
+      "mode": 0,
+      "properties": {
+        "text": ""
+      },
+      "widgets_values": [
+        "658644618289029\n\nFantasy movies, inpired from Indiana Jones directed by George Lucas,Love,high fashion photography photo, full body, fill lighting, dutch angle, Leica M3, 50mm,anime key visual, masterpiece, Mystical Neptune, Shaolinn Monk, at Blue hour, Regret, Cryptidcore, specular lighting, F/5, highly detailed face,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)), (white skin type), (age  32), from SWEDEN, film grain,(red hair),\n\n CheckPoints \nanimeClesticMAgic  -->  Nice flat drawing style\nAbysOrangeMix_HArd -->  SDA MEdium\nrevanimwted_122    -->  SDA HArd\noekakizuimodel     -->  Nice flat drawing style\nmistoonanime_V20   -->  Nice flat drawing style\nmeinHEntai         -->  Nice flat drawing style\nDreamshaper        -->  Nice Sctches\ncomfyroll          -->  Mix Flat Design\nanythingelse       -->  Mix Flat Design\n\n\nsguniform or strange ddimunifoirm (more denoise)\n "
+      ],
+      "color": "#4f2522",
+      "bgcolor": "#633936"
+    },
+    {
       "id": 283,
       "type": "VAEEncode",
       "pos": [
@@ -4149,7 +3773,7 @@
           "name": "LATENT",
           "type": "LATENT",
           "links": [
-            12228
+            12812
           ],
           "shape": 3,
           "slot_index": 0
@@ -4158,6 +3782,181 @@
       "properties": {
         "Node name for S&R": "VAEEncode"
       }
+    },
+    {
+      "id": 21,
+      "type": "VAEEncode",
+      "pos": [
+        2160,
+        -970
+      ],
+      "size": {
+        "0": 210,
+        "1": 46
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 80,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pixels",
+          "type": "IMAGE",
+          "link": 3480,
+          "slot_index": 0
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "link": 12127
+        }
+      ],
+      "outputs": [
+        {
+          "name": "LATENT",
+          "type": "LATENT",
+          "links": [
+            6918
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "VAEEncode"
+      },
+      "color": "#224f41",
+      "bgcolor": "#366355"
+    },
+    {
+      "id": 118,
+      "type": "Image Lucy Sharpen",
+      "pos": [
+        2090,
+        -1140
+      ],
+      "size": {
+        "0": 210,
+        "1": 82
+      },
+      "flags": {
+        "collapsed": false,
+        "pinned": false
+      },
+      "order": 79,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 7177
+        }
+      ],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            3480
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image Lucy Sharpen"
+      },
+      "widgets_values": [
+        12,
+        1
+      ],
+      "color": "#224f35",
+      "bgcolor": "#366349"
+    },
+    {
+      "id": 236,
+      "type": "PortraitMaster",
+      "pos": [
+        -2142.3307157036393,
+        104.66118413659059
+      ],
+      "size": {
+        "0": 400,
+        "1": 1278
+      },
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "STRING",
+          "links": [
+            11594
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PortraitMaster"
+      },
+      "widgets_values": [
+        "-",
+        0,
+        "Woman",
+        0,
+        31,
+        "-",
+        "-",
+        1,
+        "-",
+        0,
+        "-",
+        "-",
+        "-",
+        1.95,
+        "-",
+        0,
+        0,
+        "-",
+        "-",
+        0,
+        "-",
+        1.07,
+        1.01,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.88,
+        0.8200000000000001,
+        0.11,
+        0.05,
+        "-",
+        "-",
+        0,
+        "disable",
+        "",
+        "",
+        "",
+        "",
+        "-",
+        1.9000000000000001,
+        "-",
+        1
+      ]
     },
     {
       "id": 286,
@@ -4171,7 +3970,7 @@
         "1": 58
       },
       "flags": {},
-      "order": 17,
+      "order": 12,
       "mode": 0,
       "outputs": [
         {
@@ -4192,63 +3991,104 @@
       ]
     },
     {
-      "id": 19,
-      "type": "Image Lucy Sharpen",
+      "id": 289,
+      "type": "GlobalSeed //Inspire",
       "pos": [
-        1340,
-        -820
+        120,
+        -1540
       ],
       "size": {
-        "0": 210,
-        "1": 82
+        "0": 315,
+        "1": 130
       },
-      "flags": {
-        "collapsed": true,
-        "pinned": false
+      "flags": {},
+      "order": 13,
+      "mode": 0,
+      "properties": {
+        "Node name for S&R": "GlobalSeed //Inspire"
       },
-      "order": 76,
+      "widgets_values": [
+        3767098097,
+        true,
+        "randomize",
+        1875637580
+      ]
+    },
+    {
+      "id": 211,
+      "type": "Reroute (rgthree)",
+      "pos": {
+        "0": -840,
+        "1": -1290,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0
+      },
+      "size": [
+        40,
+        30
+      ],
+      "flags": {},
+      "order": 54,
       "mode": 0,
       "inputs": [
         {
-          "name": "images",
-          "type": "IMAGE",
-          "link": 6876
+          "name": "",
+          "type": "*",
+          "link": 12086,
+          "dir": 1,
+          "has_old_label": true,
+          "label": " ",
+          "widget": {
+            "name": "value"
+          }
         }
       ],
       "outputs": [
         {
-          "name": "IMAGE",
-          "type": "IMAGE",
+          "name": "STRING",
+          "type": "STRING",
           "links": [
-            7175
+            11593
           ],
-          "shape": 3,
+          "dir": 2,
+          "has_old_label": true,
+          "label": " ",
           "slot_index": 0
         }
       ],
       "properties": {
-        "Node name for S&R": "Image Lucy Sharpen"
+        "resizable": false,
+        "size": [
+          40,
+          30
+        ],
+        "connections_layout": [
+          "Top",
+          "Bottom"
+        ]
       },
-      "widgets_values": [
-        12,
-        1
-      ],
-      "color": "#22354f",
-      "bgcolor": "#364963"
+      "color": "#494f22",
+      "bgcolor": "#5d6336"
     },
     {
       "id": 235,
       "type": "ttN hiresfixScale",
       "pos": [
-        1610,
-        -870
+        1920,
+        -840
       ],
       "size": {
         "0": 320,
         "1": 340
       },
       "flags": {},
-      "order": 77,
+      "order": 78,
       "mode": 0,
       "inputs": [
         {
@@ -4300,27 +4140,27 @@
       ]
     },
     {
-      "id": 118,
+      "id": 19,
       "type": "Image Lucy Sharpen",
       "pos": [
-        1830,
-        -1050
+        1710,
+        -780
       ],
       "size": {
         "0": 210,
         "1": 82
       },
       "flags": {
-        "collapsed": false,
+        "collapsed": true,
         "pinned": false
       },
-      "order": 78,
+      "order": 77,
       "mode": 0,
       "inputs": [
         {
           "name": "images",
           "type": "IMAGE",
-          "link": 7177
+          "link": 6876
         }
       ],
       "outputs": [
@@ -4328,7 +4168,7 @@
           "name": "IMAGE",
           "type": "IMAGE",
           "links": [
-            3480
+            7175
           ],
           "shape": 3,
           "slot_index": 0
@@ -4341,106 +4181,729 @@
         12,
         1
       ],
-      "color": "#224f35",
-      "bgcolor": "#366349"
+      "color": "#22354f",
+      "bgcolor": "#364963"
     },
     {
-      "id": 236,
-      "type": "PortraitMaster",
+      "id": 65,
+      "type": "BilboXPhotoPrompt",
       "pos": [
-        -2142.3307157036393,
-        104.66118413659059
+        -2152.3307157036393,
+        -1095.3388158634084
       ],
       "size": {
-        "0": 400,
-        "1": 1278
+        "0": 360,
+        "1": 540
       },
-      "flags": {},
-      "order": 18,
-      "mode": 0,
+      "flags": {
+        "pinned": false
+      },
+      "order": 14,
+      "mode": 4,
       "outputs": [
         {
-          "name": "positive",
+          "name": "full_composed_prompt",
           "type": "STRING",
           "links": [
-            11594
+            11588
           ],
           "shape": 3,
           "slot_index": 0
         },
         {
+          "name": "subject_only",
+          "type": "STRING",
+          "links": [],
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "BilboXPhotoPrompt"
+      },
+      "widgets_values": [
+        true,
+        "glamour photography",
+        "",
+        "full body",
+        "",
+        "golden hour",
+        "",
+        "Hasselblad 500CM",
+        "Ilford HP5 Plus",
+        "50mm",
+        "",
+        "Richard Avedon",
+        "glamour photography photo of , full body, golden hour, Hasselblad 500CM, Ilford HP5 Plus, 50mm, in the style of Richard Avedon",
+        "Yes"
+      ],
+      "color": "#404f22",
+      "bgcolor": "#546336"
+    },
+    {
+      "id": 197,
+      "type": "Text _O",
+      "pos": [
+        -1177.9678238988304,
+        192.82917811889607
+      ],
+      "size": {
+        "0": 420,
+        "1": 160
+      },
+      "flags": {},
+      "order": 15,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            4692
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "title": "Negative (Static)",
+      "properties": {
+        "Node name for S&R": "Text _O"
+      },
+      "widgets_values": [
+        "(worst quality:1.2), (low quality:1.2), (lowres:1.1), (monochrome:1.1),  multiple views, comic, sketch, (((bad anatomy))), (((deformed))), (((disfigured))), watermark, multiple_views, mutation hands, mutation fingers, extra fingers, missing fingers, sketches, (worst quality, bad quality, child, cropped:1.4),"
+      ],
+      "color": "#4f2247",
+      "bgcolor": "#63365b"
+    },
+    {
+      "id": 15,
+      "type": "ttN pipeLoader",
+      "pos": [
+        50,
+        -1130
+      ],
+      "size": {
+        "0": 400,
+        "1": 700
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 69,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model_override",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "clip_override",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "optional_lora_stack",
+          "type": "LORA_STACK",
+          "link": null
+        },
+        {
+          "name": "empty_latent_width",
+          "type": "INT",
+          "link": 4128,
+          "widget": {
+            "name": "empty_latent_width"
+          }
+        },
+        {
+          "name": "empty_latent_height",
+          "type": "INT",
+          "link": 4127,
+          "widget": {
+            "name": "empty_latent_height"
+          }
+        },
+        {
+          "name": "batch_size",
+          "type": "INT",
+          "link": 4126,
+          "widget": {
+            "name": "batch_size"
+          }
+        },
+        {
+          "name": "positive",
+          "type": "STRING",
+          "link": 3811,
+          "widget": {
+            "name": "positive"
+          },
+          "slot_index": 6
+        },
+        {
           "name": "negative",
           "type": "STRING",
+          "link": 4072,
+          "widget": {
+            "name": "negative"
+          },
+          "slot_index": 7
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": [
+            12811
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": [
+            9
+          ],
+          "shape": 3,
+          "slot_index": 1
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [],
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "seed",
+          "type": "INT",
           "links": null,
           "shape": 3
         }
       ],
       "properties": {
-        "Node name for S&R": "PortraitMaster"
+        "Node name for S&R": "ttN pipeLoader",
+        "ttNnodeVersion": "1.1.2"
       },
       "widgets_values": [
-        "-",
-        0,
-        "Woman",
-        0,
-        31,
-        "-",
-        "-",
+        "revAnimated_v122EOL.safetensors",
+        "Default",
+        "Baked VAE",
+        -2,
+        "LCM15.safetensors",
         1,
-        "-",
-        0,
-        "-",
-        "-",
-        "-",
-        1.95,
-        "-",
-        0,
-        0,
-        "-",
-        "-",
-        0,
-        "-",
-        0.54,
-        1.01,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0.49,
-        0.46,
-        0.11,
-        0.05,
-        "-",
-        "-",
-        0,
-        "disable",
+        1,
+        "None",
+        1,
+        1,
+        "None",
+        1,
+        1,
+        "Positive",
+        "length+mean",
+        "comfy",
         "",
-        "",
-        "",
-        "",
-        "-",
-        1.9000000000000001,
-        "-",
-        1
+        "none",
+        "comfy",
+        512,
+        512,
+        1,
+        1759045706,
+        "fixed"
+      ],
+      "color": "#344f22",
+      "bgcolor": "#486336"
+    },
+    {
+      "id": 240,
+      "type": "LoadImage2TextModel",
+      "pos": [
+        -1652.239750962339,
+        -2287.68575892767
+      ],
+      "size": {
+        "0": 260,
+        "1": 110
+      },
+      "flags": {},
+      "order": 16,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE2TEXT_MODEL",
+          "type": "IMAGE2TEXT_MODEL",
+          "links": [
+            11358
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage2TextModel"
+      },
+      "widgets_values": [
+        "moondream1",
+        "cuda",
+        false
       ]
+    },
+    {
+      "id": 239,
+      "type": "Image2Text",
+      "pos": [
+        -1232.239750962339,
+        -2287.68575892767
+      ],
+      "size": {
+        "0": 210,
+        "1": 140
+      },
+      "flags": {},
+      "order": 44,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "IMAGE2TEXT_MODEL",
+          "link": 11358
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 11619
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            11625
+          ],
+          "shape": 6,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Image2Text"
+      },
+      "widgets_values": [
+        "Please describe this image in detail.",
+        ""
+      ]
+    },
+    {
+      "id": 287,
+      "type": "ttN pipeKSampler",
+      "pos": [
+        970,
+        -1090
+      ],
+      "size": {
+        "0": 300,
+        "1": 720
+      },
+      "flags": {},
+      "order": 75,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "link": 12811
+        },
+        {
+          "name": "optional_model",
+          "type": "MODEL",
+          "link": 12813
+        },
+        {
+          "name": "optional_positive",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_latent",
+          "type": "LATENT",
+          "link": 12812
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "optional_clip",
+          "type": "CLIP",
+          "link": null
+        },
+        {
+          "name": "xyPlot",
+          "type": "XYPLOT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": [
+            12917
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": [
+            12918
+          ],
+          "shape": 3,
+          "slot_index": 4
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": [
+            12919
+          ],
+          "shape": 3,
+          "slot_index": 6
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN pipeKSampler",
+        "ttNnodeVersion": "1.0.5"
+      },
+      "widgets_values": [
+        "sam_yang_offset_right_filesize.safetensors",
+        1.6,
+        1,
+        "None",
+        2,
+        "disabled",
+        "Sample",
+        20,
+        1.5,
+        "lcm",
+        "sgm_uniform",
+        0.01,
+        "Hide",
+        "ComfyUI",
+        662897538278422,
+        "randomize"
+      ]
+    },
+    {
+      "id": 201,
+      "type": "LoadImage",
+      "pos": [
+        -2150,
+        -2000
+      ],
+      "size": {
+        "0": 520,
+        "1": 730
+      },
+      "flags": {},
+      "order": 17,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            12089
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null,
+          "shape": 3,
+          "slot_index": 1
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "w1200_h675_x552_y280_442238422.jpg-ac4e175d5cc7fdef (1) (1).jpeg",
+        "image"
+      ],
+      "color": "#4f2e22",
+      "bgcolor": "#634236"
+    },
+    {
+      "id": 221,
+      "type": "ttN pipeKSampler",
+      "pos": [
+        1340,
+        -1090
+      ],
+      "size": [
+        330,
+        720
+      ],
+      "flags": {
+        "collapsed": false
+      },
+      "order": 76,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "link": 12917
+        },
+        {
+          "name": "optional_model",
+          "type": "MODEL",
+          "link": null
+        },
+        {
+          "name": "optional_positive",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_negative",
+          "type": "CONDITIONING",
+          "link": null
+        },
+        {
+          "name": "optional_latent",
+          "type": "LATENT",
+          "link": 12918
+        },
+        {
+          "name": "optional_vae",
+          "type": "VAE",
+          "link": null
+        },
+        {
+          "name": "optional_clip",
+          "type": "CLIP",
+          "link": 12919
+        },
+        {
+          "name": "xyPlot",
+          "type": "XYPLOT",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "pipe",
+          "type": "PIPE_LINE",
+          "links": [
+            6917
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "model",
+          "type": "MODEL",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "positive",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "negative",
+          "type": "CONDITIONING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "latent",
+          "type": "LATENT",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "vae",
+          "type": "VAE",
+          "links": [
+            12114,
+            12127
+          ],
+          "shape": 3,
+          "slot_index": 5
+        },
+        {
+          "name": "clip",
+          "type": "CLIP",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            6876
+          ],
+          "shape": 3,
+          "slot_index": 7
+        },
+        {
+          "name": "seed",
+          "type": "INT",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN pipeKSampler",
+        "ttNnodeVersion": "1.0.5"
+      },
+      "widgets_values": [
+        "pensketch_lora_v2.3.safetensors",
+        0.5,
+        1,
+        "None",
+        2,
+        "disabled",
+        "Sample",
+        20,
+        1.5,
+        "lcm",
+        "normal",
+        0.05,
+        "Hide",
+        "ComfyUI",
+        583157959025226,
+        "randomize"
+      ],
+      "color": "#2f4f22",
+      "bgcolor": "#436336"
+    },
+    {
+      "id": 4,
+      "type": "Text _O",
+      "pos": [
+        -1670,
+        -680
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 18,
+      "mode": 4,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            7250
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text _O"
+      },
+      "widgets_values": [
+        "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, ((high detailed face)),((high detailed eyes)), ((background in style of watercolor)), ((thin lips))."
+      ],
+      "color": "#22314f",
+      "bgcolor": "#364563",
+      "shape": 2
     },
     {
       "id": 223,
       "type": "ttN pipeKSampler",
       "pos": [
-        2246.276216319314,
-        -1117.236163663145
+        2390,
+        -1000
       ],
-      "size": {
-        "0": 330,
-        "1": 580
-      },
+      "size": [
+        330,
+        580
+      ],
       "flags": {},
-      "order": 80,
+      "order": 81,
       "mode": 0,
       "inputs": [
         {
@@ -4549,380 +5012,22 @@
       },
       "widgets_values": [
         "add_detail.safetensors",
-        0.89,
+        -1.24,
         1,
         "None",
         2,
         "disabled",
         "Sample",
-        3,
+        4,
         1.5,
         "lcm",
         "sgm_uniform",
-        0.12,
+        0.1,
         "Hide",
         "ComfyUI",
-        1912659208,
+        141881586686759,
         "randomize"
-      ],
-      "color": "#224f28",
-      "bgcolor": "#36633c"
-    },
-    {
-      "id": 221,
-      "type": "ttN pipeKSampler",
-      "pos": [
-        978.0394384071219,
-        -1129.0745292579481
-      ],
-      "size": {
-        "0": 330,
-        "1": 580
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 75,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "pipe",
-          "type": "PIPE_LINE",
-          "link": 6870
-        },
-        {
-          "name": "optional_model",
-          "type": "MODEL",
-          "link": 6871
-        },
-        {
-          "name": "optional_positive",
-          "type": "CONDITIONING",
-          "link": null
-        },
-        {
-          "name": "optional_negative",
-          "type": "CONDITIONING",
-          "link": null
-        },
-        {
-          "name": "optional_latent",
-          "type": "LATENT",
-          "link": 12228
-        },
-        {
-          "name": "optional_vae",
-          "type": "VAE",
-          "link": null
-        },
-        {
-          "name": "optional_clip",
-          "type": "CLIP",
-          "link": null
-        },
-        {
-          "name": "xyPlot",
-          "type": "XYPLOT",
-          "link": null
-        }
-      ],
-      "outputs": [
-        {
-          "name": "pipe",
-          "type": "PIPE_LINE",
-          "links": [
-            6917
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "links": [
-            12114,
-            12127
-          ],
-          "shape": 3,
-          "slot_index": 5
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "image",
-          "type": "IMAGE",
-          "links": [
-            6876
-          ],
-          "shape": 3,
-          "slot_index": 7
-        },
-        {
-          "name": "seed",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ttN pipeKSampler",
-        "ttNnodeVersion": "1.0.5"
-      },
-      "widgets_values": [
-        "sam_yang_offset_right_filesize.safetensors",
-        1.27,
-        0.13,
-        "None",
-        2,
-        "disabled",
-        "Sample",
-        20,
-        1.5,
-        "lcm",
-        "sgm_uniform",
-        0.01,
-        "Hide",
-        "ComfyUI",
-        1912659208,
-        "randomize"
-      ],
-      "color": "#2f4f22",
-      "bgcolor": "#436336"
-    },
-    {
-      "id": 201,
-      "type": "LoadImage",
-      "pos": [
-        -2152.2397509623397,
-        -1997.6857589276713
-      ],
-      "size": {
-        "0": 520,
-        "1": 730
-      },
-      "flags": {},
-      "order": 19,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "IMAGE",
-          "type": "IMAGE",
-          "links": [
-            12089
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "MASK",
-          "type": "MASK",
-          "links": null,
-          "shape": 3,
-          "slot_index": 1
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "LoadImage"
-      },
-      "widgets_values": [
-        "akt-dessous-fotografie-16-sandra-seifen-fotografie-303c2fad (1) (2).jpg",
-        "image"
-      ],
-      "color": "#4f2e22",
-      "bgcolor": "#634236"
-    },
-    {
-      "id": 15,
-      "type": "ttN pipeLoader",
-      "pos": [
-        50,
-        -1130
-      ],
-      "size": {
-        "0": 400,
-        "1": 700
-      },
-      "flags": {
-        "pinned": false
-      },
-      "order": 69,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "model_override",
-          "type": "MODEL",
-          "link": null
-        },
-        {
-          "name": "clip_override",
-          "type": "CLIP",
-          "link": null
-        },
-        {
-          "name": "optional_lora_stack",
-          "type": "LORA_STACK",
-          "link": null
-        },
-        {
-          "name": "empty_latent_width",
-          "type": "INT",
-          "link": 4128,
-          "widget": {
-            "name": "empty_latent_width"
-          }
-        },
-        {
-          "name": "empty_latent_height",
-          "type": "INT",
-          "link": 4127,
-          "widget": {
-            "name": "empty_latent_height"
-          }
-        },
-        {
-          "name": "batch_size",
-          "type": "INT",
-          "link": 4126,
-          "widget": {
-            "name": "batch_size"
-          }
-        },
-        {
-          "name": "positive",
-          "type": "STRING",
-          "link": 3811,
-          "widget": {
-            "name": "positive"
-          },
-          "slot_index": 6
-        },
-        {
-          "name": "negative",
-          "type": "STRING",
-          "link": 4072,
-          "widget": {
-            "name": "negative"
-          },
-          "slot_index": 7
-        }
-      ],
-      "outputs": [
-        {
-          "name": "pipe",
-          "type": "PIPE_LINE",
-          "links": [
-            6870
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "model",
-          "type": "MODEL",
-          "links": [
-            9
-          ],
-          "shape": 3,
-          "slot_index": 1
-        },
-        {
-          "name": "positive",
-          "type": "CONDITIONING",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "negative",
-          "type": "CONDITIONING",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "latent",
-          "type": "LATENT",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "vae",
-          "type": "VAE",
-          "links": [],
-          "shape": 3,
-          "slot_index": 5
-        },
-        {
-          "name": "clip",
-          "type": "CLIP",
-          "links": null,
-          "shape": 3
-        },
-        {
-          "name": "seed",
-          "type": "INT",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "ttN pipeLoader",
-        "ttNnodeVersion": "1.1.2"
-      },
-      "widgets_values": [
-        "jhsSamdoesarts_v5.ckpt",
-        "Default",
-        "wdVAE_v10.safetensors",
-        -2,
-        "LCM15.safetensors",
-        1,
-        1,
-        "None",
-        1,
-        1,
-        "None",
-        1,
-        1,
-        "Positive",
-        "length+mean",
-        "comfy",
-        "",
-        "none",
-        "comfy",
-        512,
-        512,
-        1,
-        1912659208,
-        "fixed"
-      ],
-      "color": "#344f22",
-      "bgcolor": "#486336"
+      ]
     },
     {
       "id": 85,
@@ -4938,7 +5043,7 @@
       "flags": {
         "pinned": false
       },
-      "order": 20,
+      "order": 19,
       "mode": 4,
       "inputs": [],
       "outputs": [
@@ -4946,7 +5051,7 @@
           "name": "STRING",
           "type": "STRING",
           "links": [
-            12774
+            13879
           ],
           "shape": 3,
           "slot_index": 0
@@ -4975,7 +5080,7 @@
                   "name": "STYLE 1",
                   "type": "STRING",
                   "links": [
-                    12763
+                    13868
                   ],
                   "shape": 3,
                   "slot_index": 0
@@ -4984,7 +5089,7 @@
                   "name": "STYLE 2",
                   "type": "STRING",
                   "links": [
-                    12764
+                    13869
                   ],
                   "shape": 3,
                   "slot_index": 1
@@ -4993,7 +5098,7 @@
                   "name": "STYLE 3",
                   "type": "STRING",
                   "links": [
-                    12765
+                    13870
                   ],
                   "shape": 3,
                   "slot_index": 2
@@ -5002,7 +5107,7 @@
                   "name": "STYLE 4",
                   "type": "STRING",
                   "links": [
-                    12766
+                    13871
                   ],
                   "shape": 3,
                   "slot_index": 3
@@ -5011,7 +5116,7 @@
                   "name": "STYLE 5",
                   "type": "STRING",
                   "links": [
-                    12767
+                    13872
                   ],
                   "shape": 3,
                   "slot_index": 4
@@ -5020,7 +5125,7 @@
                   "name": "STYLE 6",
                   "type": "STRING",
                   "links": [
-                    12768
+                    13873
                   ],
                   "shape": 3,
                   "slot_index": 5
@@ -5029,7 +5134,7 @@
                   "name": "STYLE 7",
                   "type": "STRING",
                   "links": [
-                    12769
+                    13874
                   ],
                   "shape": 3,
                   "slot_index": 6
@@ -5038,7 +5143,7 @@
                   "name": "STYLE 8",
                   "type": "STRING",
                   "links": [
-                    12770
+                    13875
                   ],
                   "shape": 3,
                   "slot_index": 7
@@ -5047,7 +5152,7 @@
                   "name": "STYLE 9",
                   "type": "STRING",
                   "links": [
-                    12771
+                    13876
                   ],
                   "shape": 3,
                   "slot_index": 8
@@ -5056,7 +5161,7 @@
                   "name": "STYLE 10",
                   "type": "STRING",
                   "links": [
-                    12772
+                    13877
                   ],
                   "shape": 3,
                   "slot_index": 9
@@ -5732,7 +5837,7 @@
                 {
                   "name": "text_a",
                   "type": "STRING",
-                  "link": 12763,
+                  "link": 13868,
                   "widget": {
                     "name": "text_a"
                   }
@@ -5740,7 +5845,7 @@
                 {
                   "name": "text_b",
                   "type": "STRING",
-                  "link": 12764,
+                  "link": 13869,
                   "widget": {
                     "name": "text_b"
                   }
@@ -5748,7 +5853,7 @@
                 {
                   "name": "text_c",
                   "type": "STRING",
-                  "link": 12765,
+                  "link": 13870,
                   "widget": {
                     "name": "text_c"
                   }
@@ -5756,7 +5861,7 @@
                 {
                   "name": "text_d",
                   "type": "STRING",
-                  "link": 12766,
+                  "link": 13871,
                   "widget": {
                     "name": "text_d"
                   }
@@ -5764,7 +5869,7 @@
                 {
                   "name": "text_e",
                   "type": "STRING",
-                  "link": 12767,
+                  "link": 13872,
                   "widget": {
                     "name": "text_e"
                   }
@@ -5772,7 +5877,7 @@
                 {
                   "name": "text_f",
                   "type": "STRING",
-                  "link": 12768,
+                  "link": 13873,
                   "widget": {
                     "name": "text_f"
                   }
@@ -5780,7 +5885,7 @@
                 {
                   "name": "text_g",
                   "type": "STRING",
-                  "link": 12769,
+                  "link": 13874,
                   "widget": {
                     "name": "text_g"
                   }
@@ -5788,7 +5893,7 @@
                 {
                   "name": "text_h",
                   "type": "STRING",
-                  "link": 12770,
+                  "link": 13875,
                   "widget": {
                     "name": "text_h"
                   }
@@ -5796,7 +5901,7 @@
                 {
                   "name": "text_i",
                   "type": "STRING",
-                  "link": 12771,
+                  "link": 13876,
                   "widget": {
                     "name": "text_i"
                   }
@@ -5804,7 +5909,7 @@
                 {
                   "name": "text_j",
                   "type": "STRING",
-                  "link": 12772,
+                  "link": 13877,
                   "widget": {
                     "name": "text_j"
                   }
@@ -5815,7 +5920,7 @@
                   "name": "STRING",
                   "type": "STRING",
                   "links": [
-                    12773
+                    13878
                   ],
                   "shape": 3,
                   "slot_index": 0
@@ -5851,7 +5956,7 @@
                       "true"
                     ]
                   },
-                  "last_y": 226.00001525878906
+                  "last_y": null
                 },
                 {
                   "type": "converted-widget",
@@ -5861,7 +5966,7 @@
                     "forceInput": true
                   },
                   "origType": "text",
-                  "last_y": 250.00001525878906
+                  "last_y": null
                 },
                 {
                   "type": "converted-widget",
@@ -5870,7 +5975,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 },
                 {
@@ -5880,7 +5985,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 },
                 {
@@ -5890,7 +5995,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 },
                 {
@@ -5900,7 +6005,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 },
                 {
@@ -5910,7 +6015,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 },
                 {
@@ -5920,7 +6025,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 },
                 {
@@ -5930,7 +6035,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 },
                 {
@@ -5940,7 +6045,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 },
                 {
@@ -5950,7 +6055,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 },
                 {
@@ -5960,7 +6065,7 @@
                   "options": {
                     "forceInput": true
                   },
-                  "last_y": 250.00001525878906,
+                  "last_y": null,
                   "origType": "text"
                 }
               ]
@@ -5985,6 +6090,43 @@
       ],
       "color": "#444f22",
       "bgcolor": "#586336"
+    },
+    {
+      "id": 152,
+      "type": "Text _O",
+      "pos": [
+        -1682.3307157036384,
+        -335.3388158634094
+      ],
+      "size": {
+        "0": 400,
+        "1": 200
+      },
+      "flags": {
+        "pinned": false
+      },
+      "order": 20,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            11603
+          ],
+          "shape": 3,
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "Text _O"
+      },
+      "widgets_values": [
+        "((samdoesarts), masterpiece, high quality, intricate details),digital art,wide angle,full body shot,((high detailed face)),((high detailed eyes)),((background in style of watercolor)), ((cute smiling)), (((thin lips))), ((large disney eyes))"
+      ],
+      "color": "#48224f",
+      "bgcolor": "#5c3663",
+      "shape": 2
     }
   ],
   "links": [
@@ -6219,22 +6361,6 @@
       186,
       1,
       "STRING"
-    ],
-    [
-      6870,
-      15,
-      0,
-      221,
-      0,
-      "PIPE_LINE"
-    ],
-    [
-      6871,
-      17,
-      0,
-      221,
-      1,
-      "MODEL"
     ],
     [
       6876,
@@ -6661,14 +6787,6 @@
       "IMAGE"
     ],
     [
-      12228,
-      283,
-      0,
-      221,
-      4,
-      "LATENT"
-    ],
-    [
       12231,
       16,
       0,
@@ -6701,7 +6819,55 @@
       "VAE"
     ],
     [
-      12774,
+      12811,
+      15,
+      0,
+      287,
+      0,
+      "PIPE_LINE"
+    ],
+    [
+      12812,
+      283,
+      0,
+      287,
+      4,
+      "LATENT"
+    ],
+    [
+      12813,
+      17,
+      0,
+      287,
+      1,
+      "MODEL"
+    ],
+    [
+      12917,
+      287,
+      0,
+      221,
+      0,
+      "PIPE_LINE"
+    ],
+    [
+      12918,
+      287,
+      4,
+      221,
+      4,
+      "LATENT"
+    ],
+    [
+      12919,
+      287,
+      6,
+      221,
+      6,
+      "CLIP"
+    ],
+    [
+      13879,
       85,
       0,
       167,
@@ -6912,7 +7078,7 @@
       "description": "",
       "version": "1",
       "created": "2024-01-16T11:43:40.487Z",
-      "modified": "2024-02-20T11:53:59.050Z",
+      "modified": "2024-02-20T16:43:33.506Z",
       "software": "ComfyUI"
     }
   },
