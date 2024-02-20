@@ -1,6 +1,6 @@
 {
-  "last_node_id": 124,
-  "last_link_id": 692,
+  "last_node_id": 127,
+  "last_link_id": 735,
   "nodes": [
     {
       "id": 53,
@@ -14,7 +14,7 @@
         "1": 150
       },
       "flags": {},
-      "order": 6,
+      "order": 7,
       "mode": 0,
       "inputs": [
         {
@@ -110,7 +110,7 @@
         "1": 78
       },
       "flags": {},
-      "order": 27,
+      "order": 29,
       "mode": 0,
       "inputs": [
         {
@@ -162,7 +162,7 @@
         "1": 384
       },
       "flags": {},
-      "order": 25,
+      "order": 27,
       "mode": 0,
       "inputs": [
         {
@@ -223,7 +223,7 @@
       "flags": {
         "collapsed": false
       },
-      "order": 7,
+      "order": 8,
       "mode": 0,
       "inputs": [
         {
@@ -238,7 +238,7 @@
         {
           "name": "text2",
           "type": "STRING",
-          "link": 686,
+          "link": 732,
           "widget": {
             "name": "text2"
           },
@@ -247,7 +247,7 @@
         {
           "name": "text3",
           "type": "STRING",
-          "link": 687,
+          "link": 733,
           "widget": {
             "name": "text3"
           },
@@ -429,7 +429,7 @@
         "Node name for S&R": "Seed With Text"
       },
       "widgets_values": [
-        4039922280,
+        348232279,
         "fixed",
         "out",
         "_"
@@ -531,7 +531,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 11,
+      "order": 15,
       "mode": 0,
       "inputs": [
         {
@@ -580,7 +580,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 13,
+      "order": 17,
       "mode": 0,
       "inputs": [
         {
@@ -622,7 +622,7 @@
         "1": 342
       },
       "flags": {},
-      "order": 28,
+      "order": 30,
       "mode": 0,
       "inputs": [
         {
@@ -674,7 +674,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 26,
+      "order": 28,
       "mode": 0,
       "inputs": [
         {
@@ -689,65 +689,6 @@
       },
       "color": "#22254f",
       "bgcolor": "#363963"
-    },
-    {
-      "id": 16,
-      "type": "OneButtonPrompt",
-      "pos": [
-        -2260,
-        -460
-      ],
-      "size": {
-        "0": 360,
-        "1": 420
-      },
-      "flags": {},
-      "order": 2,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "prompt",
-          "type": "STRING",
-          "links": [
-            139
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "prompt_g",
-          "type": "STRING",
-          "links": [],
-          "shape": 3
-        },
-        {
-          "name": "prompt_l",
-          "type": "STRING",
-          "links": [],
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "OneButtonPrompt"
-      },
-      "widgets_values": [
-        5,
-        "scene",
-        "all - force multiple",
-        30,
-        "humanoid",
-        "(((battle scene, wide angle)))",
-        "",
-        "generic objects",
-        "celebrities e.a.",
-        "female",
-        "the X of Y concepts",
-        false,
-        4039922280,
-        "fixed"
-      ],
-      "color": "#4f3422",
-      "bgcolor": "#634836"
     },
     {
       "id": 17,
@@ -794,7 +735,7 @@
         "Promts",
         "On Change",
         "",
-        "designed by Briton Rivière, RAW photo, Cinematic still, elegant, Kawaii ((((battle scene, wide angle))) :1.1) , wearing Nerdy A-line dress, she has Light hair styled as Mullet, soft focus, Evil, Moonlit, Orton effect, Canon RF, 80mm, moody, photo-realistic face, Highres,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (white skin type) , (age  17),  (blue hair),"
+        "Painting, Bronze Statue of a Monstrous lanky Paige of Envy, Singing in a choir, stylized by Balthus, Bardcore, Light and shadow plays, L USM, unreal engine, cityscape,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (white skin type) , (age  17),  (blue hair),"
       ],
       "color": "#4f2235",
       "bgcolor": "#633649"
@@ -813,7 +754,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 17,
+      "order": 19,
       "mode": 0,
       "inputs": [
         {
@@ -857,7 +798,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 18,
+      "order": 20,
       "mode": 2,
       "inputs": [
         {
@@ -887,7 +828,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 20,
+      "order": 22,
       "mode": 0,
       "inputs": [
         {
@@ -932,7 +873,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 21,
+      "order": 23,
       "mode": 2,
       "inputs": [
         {
@@ -962,7 +903,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 23,
+      "order": 25,
       "mode": 2,
       "inputs": [
         {
@@ -992,7 +933,7 @@
       "flags": {
         "collapsed": true
       },
-      "order": 22,
+      "order": 24,
       "mode": 0,
       "inputs": [
         {
@@ -1032,12 +973,12 @@
       ],
       "size": {
         "0": 400,
-        "1": 506
+        "1": 510
       },
       "flags": {
         "collapsed": true
       },
-      "order": 15,
+      "order": 18,
       "mode": 0,
       "inputs": [
         {
@@ -1171,7 +1112,7 @@
         1,
         "Hide",
         "ComfyUI",
-        24253419965316,
+        675760931023616,
         "randomize"
       ],
       "color": "#4e4f22",
@@ -1186,12 +1127,12 @@
       ],
       "size": {
         "0": 360,
-        "1": 506
+        "1": 510
       },
       "flags": {
         "collapsed": false
       },
-      "order": 24,
+      "order": 26,
       "mode": 0,
       "inputs": [
         {
@@ -1319,96 +1260,11 @@
         0.4,
         "Hide",
         "ComfyUI",
-        237215474100952,
+        246963728733924,
         "randomize"
       ],
       "color": "#4f4722",
       "bgcolor": "#635b36"
-    },
-    {
-      "id": 90,
-      "type": "CR Text Input Switch (4 way)",
-      "pos": [
-        -1600,
-        160
-      ],
-      "size": {
-        "0": 260.3999938964844,
-        "1": 120
-      },
-      "flags": {
-        "collapsed": false
-      },
-      "order": 8,
-      "mode": 0,
-      "inputs": [
-        {
-          "name": "text1",
-          "type": "STRING",
-          "link": 141,
-          "widget": {
-            "name": "text1"
-          },
-          "label": "Dynamic Input"
-        },
-        {
-          "name": "text2",
-          "type": "STRING",
-          "link": 142,
-          "widget": {
-            "name": "text2"
-          },
-          "label": "Static Input"
-        },
-        {
-          "name": "text3",
-          "type": "STRING",
-          "link": 688,
-          "widget": {
-            "name": "text3"
-          },
-          "label": "Experimental 1"
-        },
-        {
-          "name": "text4",
-          "type": "STRING",
-          "link": 689,
-          "widget": {
-            "name": "text4"
-          },
-          "label": "Experimental 2"
-        }
-      ],
-      "outputs": [
-        {
-          "name": "STRING",
-          "type": "STRING",
-          "links": [
-            143,
-            144
-          ],
-          "shape": 3,
-          "slot_index": 0
-        },
-        {
-          "name": "show_help",
-          "type": "STRING",
-          "links": null,
-          "shape": 3
-        }
-      ],
-      "properties": {
-        "Node name for S&R": "CR Text Input Switch (4 way)"
-      },
-      "widgets_values": [
-        1,
-        "",
-        "",
-        "",
-        ""
-      ],
-      "color": "#44224f",
-      "bgcolor": "#583663"
     },
     {
       "id": 1,
@@ -1417,12 +1273,12 @@
         -1280,
         -450
       ],
-      "size": [
-        400,
-        660
-      ],
+      "size": {
+        "0": 400,
+        "1": 660
+      },
       "flags": {},
-      "order": 9,
+      "order": 13,
       "mode": 0,
       "inputs": [
         {
@@ -1459,7 +1315,7 @@
         {
           "name": "positive",
           "type": "STRING",
-          "link": 143,
+          "link": 695,
           "widget": {
             "name": "positive"
           },
@@ -1558,289 +1414,11 @@
         512,
         712,
         1,
-        4039922280,
+        348232279,
         "fixed"
       ],
       "color": "#4f3e22",
       "bgcolor": "#635236"
-    },
-    {
-      "id": 106,
-      "type": "pROMPT_iNPUT",
-      "pos": [
-        -2280,
-        160
-      ],
-      "size": {
-        "0": 340,
-        "1": 480
-      },
-      "flags": {},
-      "order": 3,
-      "mode": 0,
-      "outputs": [
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            686
-          ],
-          "shape": 3,
-          "label": "Static Input Prompt"
-        },
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            687
-          ],
-          "shape": 3,
-          "label": "Additional Style Input"
-        },
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            688
-          ],
-          "shape": 3,
-          "label": "Experimental Prompt 1"
-        },
-        {
-          "name": "text",
-          "type": "STRING",
-          "links": [
-            689
-          ],
-          "shape": 3,
-          "slot_index": 3,
-          "label": "Experimental Prompt 2"
-        }
-      ],
-      "title": "Prompt Input",
-      "properties": {
-        "nestedData": {
-          "nestedNodes": [
-            {
-              "id": 10,
-              "type": "ttN text",
-              "pos": [
-                -2455,
-                -240
-              ],
-              "size": {
-                "0": 280,
-                "1": 200
-              },
-              "flags": {},
-              "order": 5,
-              "mode": 0,
-              "inputs": [],
-              "outputs": [
-                {
-                  "name": "text",
-                  "type": "STRING",
-                  "links": [
-                    682
-                  ],
-                  "shape": 3,
-                  "slot_index": 0
-                }
-              ],
-              "title": "Static Text Prompt",
-              "properties": {
-                "Node name for S&R": "ttN text",
-                "ttNnodeVersion": "1.0.0"
-              },
-              "widgets_values": [
-                "masterwork Digital art, intricate details, small siri from the witcher Enchanter, dressed in Classic Flare jeans, (by Abbas Kiarostami:1.1) , James Gillray, Goth Art, psychedelic colors"
-              ],
-              "color": "#254f22",
-              "bgcolor": "#396336",
-              "serializedWidgets": [
-                {
-                  "type": "customtext",
-                  "name": "text",
-                  "value": "masterwork Digital art, intricate details, small siri from the witcher Enchanter, dressed in Classic Flare jeans, (by Abbas Kiarostami:1.1) , James Gillray, Goth Art, psychedelic colors",
-                  "element": {},
-                  "options": {
-                    "hideOnZoom": true,
-                    "selectOn": [
-                      "focus",
-                      "click"
-                    ]
-                  },
-                  "inputEl": {}
-                }
-              ]
-            },
-            {
-              "id": 11,
-              "type": "ttN text",
-              "pos": [
-                -2455,
-                0
-              ],
-              "size": {
-                "0": 280,
-                "1": 200
-              },
-              "flags": {},
-              "order": 6,
-              "mode": 0,
-              "outputs": [
-                {
-                  "name": "text",
-                  "type": "STRING",
-                  "links": [
-                    683
-                  ],
-                  "shape": 3,
-                  "slot_index": 0
-                }
-              ],
-              "title": "Additional Style Prompt",
-              "properties": {
-                "Node name for S&R": "ttN text",
-                "ttNnodeVersion": "1.0.0"
-              },
-              "widgets_values": [
-                "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (white skin type) , (age  17),  (blue hair),"
-              ],
-              "color": "#22484f",
-              "bgcolor": "#365c63",
-              "serializedWidgets": [
-                {
-                  "type": "customtext",
-                  "name": "text",
-                  "value": "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (white skin type) , (age  17),  (blue hair),",
-                  "element": {},
-                  "options": {
-                    "hideOnZoom": true,
-                    "selectOn": [
-                      "focus",
-                      "click"
-                    ]
-                  },
-                  "inputEl": {}
-                }
-              ]
-            },
-            {
-              "id": 98,
-              "type": "ttN text",
-              "pos": [
-                -2195,
-                400
-              ],
-              "size": {
-                "0": 280,
-                "1": 200
-              },
-              "flags": {},
-              "order": 7,
-              "mode": 0,
-              "outputs": [
-                {
-                  "name": "text",
-                  "type": "STRING",
-                  "links": [
-                    684
-                  ],
-                  "shape": 3,
-                  "slot_index": 0
-                }
-              ],
-              "title": "Experimental 1",
-              "properties": {
-                "Node name for S&R": "ttN text",
-                "ttNnodeVersion": "1.0.0"
-              },
-              "widgets_values": [
-                ""
-              ],
-              "color": "#4f2242",
-              "bgcolor": "#633656",
-              "serializedWidgets": [
-                {
-                  "type": "customtext",
-                  "name": "text",
-                  "value": "",
-                  "element": {},
-                  "options": {
-                    "hideOnZoom": true,
-                    "selectOn": [
-                      "focus",
-                      "click"
-                    ]
-                  },
-                  "inputEl": {}
-                }
-              ]
-            },
-            {
-              "id": 105,
-              "type": "ttN text",
-              "pos": [
-                -2015,
-                480
-              ],
-              "size": {
-                "0": 280,
-                "1": 200
-              },
-              "flags": {},
-              "order": 8,
-              "mode": 0,
-              "outputs": [
-                {
-                  "name": "text",
-                  "type": "STRING",
-                  "links": [
-                    685
-                  ],
-                  "shape": 3,
-                  "slot_index": 0
-                }
-              ],
-              "title": "Experimental 2",
-              "properties": {
-                "Node name for S&R": "ttN text",
-                "ttNnodeVersion": "1.0.0"
-              },
-              "widgets_values": [
-                "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),"
-              ],
-              "color": "#4f222a",
-              "bgcolor": "#63363e",
-              "serializedWidgets": [
-                {
-                  "type": "customtext",
-                  "name": "text",
-                  "value": "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),",
-                  "element": {},
-                  "options": {
-                    "hideOnZoom": true,
-                    "selectOn": [
-                      "focus",
-                      "click"
-                    ]
-                  },
-                  "inputEl": {}
-                }
-              ]
-            }
-          ]
-        }
-      },
-      "widgets_values": [
-        "masterwork Digital art, intricate details, small siri from the witcher Enchanter, dressed in Classic Flare jeans, (by Abbas Kiarostami:1.1) , James Gillray, Goth Art, psychedelic colors",
-        "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (white skin type) , (age  17),  (blue hair),",
-        "",
-        "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),"
-      ],
-      "color": "#3b224f",
-      "bgcolor": "#4f3663"
     },
     {
       "id": 123,
@@ -1849,14 +1427,14 @@
         0,
         -280
       ],
-      "size": [
-        315,
-        342
-      ],
+      "size": {
+        "0": 320,
+        "1": 340
+      },
       "flags": {
         "collapsed": true
       },
-      "order": 19,
+      "order": 21,
       "mode": 0,
       "inputs": [
         {
@@ -1890,7 +1468,8 @@
         }
       ],
       "properties": {
-        "Node name for S&R": "ttN hiresfixScale"
+        "Node name for S&R": "ttN hiresfixScale",
+        "ttNnodeVersion": "1.0.3"
       },
       "widgets_values": [
         "4x-UltraSharp.pth",
@@ -1919,7 +1498,7 @@
         "1": 278
       },
       "flags": {},
-      "order": 4,
+      "order": 2,
       "mode": 0,
       "outputs": [
         {
@@ -1992,20 +1571,627 @@
         "1": 140
       },
       "flags": {},
-      "order": 5,
+      "order": 3,
       "mode": 0,
       "inputs": [],
       "properties": {
         "Node name for S&R": "GlobalSeed //Inspire"
       },
       "widgets_values": [
-        4039922280,
+        348232279,
         true,
         "randomize",
-        274441829
+        1889610588
       ],
       "color": "#224f4a",
       "bgcolor": "#36635e"
+    },
+    {
+      "id": 90,
+      "type": "CR Text Input Switch (4 way)",
+      "pos": [
+        -1600,
+        160
+      ],
+      "size": {
+        "0": 260.3999938964844,
+        "1": 120
+      },
+      "flags": {
+        "collapsed": false
+      },
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 141,
+          "widget": {
+            "name": "text1"
+          },
+          "label": "Dynamic Input"
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 142,
+          "widget": {
+            "name": "text2"
+          },
+          "label": "Static Input"
+        },
+        {
+          "name": "text3",
+          "type": "STRING",
+          "link": 734,
+          "widget": {
+            "name": "text3"
+          },
+          "label": "Experimental 1"
+        },
+        {
+          "name": "text4",
+          "type": "STRING",
+          "link": 735,
+          "widget": {
+            "name": "text4"
+          },
+          "label": "Experimental 2"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": [
+            144,
+            694
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "show_help",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "CR Text Input Switch (4 way)"
+      },
+      "widgets_values": [
+        1,
+        "",
+        "",
+        "",
+        ""
+      ],
+      "color": "#44224f",
+      "bgcolor": "#583663"
+    },
+    {
+      "id": 126,
+      "type": "ttN text3BOX_3WAYconcat",
+      "pos": [
+        -1820,
+        320
+      ],
+      "size": [
+        400,
+        320
+      ],
+      "flags": {},
+      "order": 11,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "link": 693,
+          "widget": {
+            "name": "text1"
+          }
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "link": 694,
+          "widget": {
+            "name": "text2"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "name": "text1",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "text2",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "text3",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "1 & 2",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "1 & 3",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "2 & 3",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        },
+        {
+          "name": "concat",
+          "type": "STRING",
+          "links": [
+            695
+          ],
+          "shape": 3,
+          "slot_index": 6
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ttN text3BOX_3WAYconcat"
+      },
+      "widgets_values": [
+        "",
+        "",
+        "",
+        ","
+      ]
+    },
+    {
+      "id": 16,
+      "type": "OneButtonPrompt",
+      "pos": [
+        -2260,
+        -460
+      ],
+      "size": {
+        "0": 360,
+        "1": 420
+      },
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "prompt",
+          "type": "STRING",
+          "links": [
+            139
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "prompt_g",
+          "type": "STRING",
+          "links": [],
+          "shape": 3
+        },
+        {
+          "name": "prompt_l",
+          "type": "STRING",
+          "links": [],
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "OneButtonPrompt"
+      },
+      "widgets_values": [
+        5,
+        "scene",
+        "all - force multiple",
+        30,
+        "humanoid",
+        "",
+        "",
+        "generic objects",
+        "celebrities e.a.",
+        "female",
+        "the X of Y concepts",
+        false,
+        348232279,
+        "fixed"
+      ],
+      "color": "#4f3422",
+      "bgcolor": "#634836"
+    },
+    {
+      "id": 106,
+      "type": "pROMPT_iNPUT",
+      "pos": [
+        -2290,
+        150
+      ],
+      "size": {
+        "0": 340,
+        "1": 480
+      },
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            732
+          ],
+          "shape": 3,
+          "label": "Static Input Prompt"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            733
+          ],
+          "shape": 3,
+          "label": "Additional Style Input"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            734
+          ],
+          "shape": 3,
+          "label": "Experimental Prompt 1"
+        },
+        {
+          "name": "text",
+          "type": "STRING",
+          "links": [
+            735
+          ],
+          "shape": 3,
+          "slot_index": 3,
+          "label": "Experimental Prompt 2"
+        }
+      ],
+      "title": "Prompt Input",
+      "properties": {
+        "nestedData": {
+          "nestedNodes": [
+            {
+              "id": 10,
+              "type": "ttN text",
+              "pos": [
+                -2455,
+                -240
+              ],
+              "size": {
+                "0": 280,
+                "1": 200
+              },
+              "flags": {},
+              "order": 6,
+              "mode": 0,
+              "inputs": [],
+              "outputs": [
+                {
+                  "name": "text",
+                  "type": "STRING",
+                  "links": [
+                    728
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                }
+              ],
+              "title": "Static Text Prompt",
+              "properties": {
+                "Node name for S&R": "ttN text",
+                "ttNnodeVersion": "1.0.0"
+              },
+              "widgets_values": [
+                "masterwork Digital art, intricate details, small siri from the witcher Enchanter, dressed in Classic Flare jeans, (by Abbas Kiarostami:1.1) , James Gillray, Goth Art, psychedelic colors"
+              ],
+              "color": "#254f22",
+              "bgcolor": "#396336",
+              "serializedWidgets": [
+                {
+                  "type": "customtext",
+                  "name": "text",
+                  "value": "masterwork Digital art, intricate details, small siri from the witcher Enchanter, dressed in Classic Flare jeans, (by Abbas Kiarostami:1.1) , James Gillray, Goth Art, psychedelic colors",
+                  "element": {},
+                  "options": {
+                    "hideOnZoom": true,
+                    "selectOn": [
+                      "focus",
+                      "click"
+                    ]
+                  },
+                  "inputEl": {},
+                  "last_y": 26,
+                  "computedHeight": 174,
+                  "y": 26
+                }
+              ]
+            },
+            {
+              "id": 11,
+              "type": "ttN text",
+              "pos": [
+                -2455,
+                0
+              ],
+              "size": {
+                "0": 280,
+                "1": 200
+              },
+              "flags": {},
+              "order": 7,
+              "mode": 0,
+              "outputs": [
+                {
+                  "name": "text",
+                  "type": "STRING",
+                  "links": [
+                    729
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                }
+              ],
+              "title": "Additional Style Prompt",
+              "properties": {
+                "Node name for S&R": "ttN text",
+                "ttNnodeVersion": "1.0.0"
+              },
+              "widgets_values": [
+                "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (white skin type) , (age  17),  (blue hair),"
+              ],
+              "color": "#22484f",
+              "bgcolor": "#365c63",
+              "serializedWidgets": [
+                {
+                  "type": "customtext",
+                  "name": "text",
+                  "value": "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (white skin type) , (age  17),  (blue hair),",
+                  "element": {},
+                  "options": {
+                    "hideOnZoom": true,
+                    "selectOn": [
+                      "focus",
+                      "click"
+                    ]
+                  },
+                  "inputEl": {},
+                  "last_y": 26,
+                  "computedHeight": 174,
+                  "y": 26
+                }
+              ]
+            },
+            {
+              "id": 98,
+              "type": "ttN text",
+              "pos": [
+                -2195,
+                400
+              ],
+              "size": {
+                "0": 280,
+                "1": 200
+              },
+              "flags": {},
+              "order": 8,
+              "mode": 0,
+              "outputs": [
+                {
+                  "name": "text",
+                  "type": "STRING",
+                  "links": [
+                    730
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                }
+              ],
+              "title": "Experimental 1",
+              "properties": {
+                "Node name for S&R": "ttN text",
+                "ttNnodeVersion": "1.0.0"
+              },
+              "widgets_values": [
+                ""
+              ],
+              "color": "#4f2242",
+              "bgcolor": "#633656",
+              "serializedWidgets": [
+                {
+                  "type": "customtext",
+                  "name": "text",
+                  "value": "",
+                  "element": {},
+                  "options": {
+                    "hideOnZoom": true,
+                    "selectOn": [
+                      "focus",
+                      "click"
+                    ]
+                  },
+                  "inputEl": {},
+                  "last_y": 26,
+                  "computedHeight": 174,
+                  "y": 26
+                }
+              ]
+            },
+            {
+              "id": 105,
+              "type": "ttN text",
+              "pos": [
+                -2015,
+                480
+              ],
+              "size": {
+                "0": 280,
+                "1": 200
+              },
+              "flags": {},
+              "order": 9,
+              "mode": 0,
+              "outputs": [
+                {
+                  "name": "text",
+                  "type": "STRING",
+                  "links": [
+                    731
+                  ],
+                  "shape": 3,
+                  "slot_index": 0
+                }
+              ],
+              "title": "Experimental 2",
+              "properties": {
+                "Node name for S&R": "ttN text",
+                "ttNnodeVersion": "1.0.0"
+              },
+              "widgets_values": [
+                "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),"
+              ],
+              "color": "#4f222a",
+              "bgcolor": "#63363e",
+              "serializedWidgets": [
+                {
+                  "type": "customtext",
+                  "name": "text",
+                  "value": "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),",
+                  "element": {},
+                  "options": {
+                    "hideOnZoom": true,
+                    "selectOn": [
+                      "focus",
+                      "click"
+                    ]
+                  },
+                  "inputEl": {},
+                  "last_y": 26,
+                  "computedHeight": 174,
+                  "y": 26
+                }
+              ]
+            }
+          ]
+        }
+      },
+      "widgets_values": [
+        "masterwork Digital art, intricate details, small siri from the witcher Enchanter, dressed in Classic Flare jeans, (by Abbas Kiarostami:1.1) , James Gillray, Goth Art, psychedelic colors",
+        "(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (white skin type) , (age  17),  (blue hair),",
+        "",
+        "masterpiece Portrait, Cinematic still, intricate details, Glamorous Disgusting (((battle scene, wide angle))) , she is bored, Standing, Thunderstorm, soft focus, Grim, Post-Rock, (art by Walter Ernest Webster:1.1) , Lorenz Hideyoshi,(samdoesarts, masterpiece, high quality, intricate details), digital art, wide angle, full body shot, high detailed face, ((background in style of watercolor)),  (black skin type) , (age  42),  (brown hair),"
+      ],
+      "color": "#3b224f",
+      "bgcolor": "#4f3663"
+    },
+    {
+      "id": 127,
+      "type": "PortraitMaster",
+      "pos": [
+        -2290,
+        720
+      ],
+      "size": {
+        "0": 400,
+        "1": 1278
+      },
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "outputs": [
+        {
+          "name": "positive",
+          "type": "STRING",
+          "links": [
+            693
+          ],
+          "shape": 3,
+          "slot_index": 0
+        },
+        {
+          "name": "negative",
+          "type": "STRING",
+          "links": null,
+          "shape": 3
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "PortraitMaster"
+      },
+      "widgets_values": [
+        "-",
+        0,
+        "-",
+        0,
+        30,
+        "-",
+        "-",
+        0.5,
+        "-",
+        0,
+        "-",
+        "-",
+        "-",
+        0,
+        "-",
+        0,
+        0,
+        "-",
+        "-",
+        0,
+        "-",
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0.9,
+        0.9,
+        0,
+        0,
+        "-",
+        "-",
+        0,
+        "enable",
+        "raw photo, (realistic:1.5)",
+        "",
+        "",
+        "",
+        "-",
+        1.5,
+        "-",
+        1.5
+      ]
     }
   ],
   "links": [
@@ -2162,14 +2348,6 @@
       "STRING"
     ],
     [
-      143,
-      90,
-      0,
-      1,
-      5,
-      "STRING"
-    ],
-    [
       144,
       90,
       0,
@@ -2282,38 +2460,6 @@
       "IMAGE"
     ],
     [
-      686,
-      106,
-      0,
-      96,
-      1,
-      "STRING"
-    ],
-    [
-      687,
-      106,
-      1,
-      96,
-      2,
-      "STRING"
-    ],
-    [
-      688,
-      106,
-      2,
-      90,
-      2,
-      "STRING"
-    ],
-    [
-      689,
-      106,
-      3,
-      90,
-      3,
-      "STRING"
-    ],
-    [
       690,
       124,
       3,
@@ -2336,6 +2482,62 @@
       1,
       4,
       "INT"
+    ],
+    [
+      693,
+      127,
+      0,
+      126,
+      0,
+      "STRING"
+    ],
+    [
+      694,
+      90,
+      0,
+      126,
+      1,
+      "STRING"
+    ],
+    [
+      695,
+      126,
+      6,
+      1,
+      5,
+      "STRING"
+    ],
+    [
+      732,
+      106,
+      0,
+      96,
+      1,
+      "STRING"
+    ],
+    [
+      733,
+      106,
+      1,
+      96,
+      2,
+      "STRING"
+    ],
+    [
+      734,
+      106,
+      2,
+      90,
+      2,
+      "STRING"
+    ],
+    [
+      735,
+      106,
+      3,
+      90,
+      3,
+      "STRING"
     ]
   ],
   "groups": [
@@ -2396,7 +2598,7 @@
       "description": "",
       "version": "1",
       "created": "2024-02-20T09:06:14.594Z",
-      "modified": "2024-02-20T09:13:45.956Z",
+      "modified": "2024-02-20T09:24:23.532Z",
       "software": "ComfyUI"
     }
   },
